@@ -45,4 +45,23 @@ Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onni
 ## Tree
 ![add file: upload](H2Kuva6.jpg)
 
-20.07 Tree on ohjelma joka listaa luettelot (directory) rekursiivisesti (recursive) tarkoittaen, että luettelojen sisäiset luettelot listataan myös. Tree on myös mielestäni selkeämpi kuin ls, sillä siitä hahmottaa paremmin kokonaisuuden. Kuvasta nähdään miten "ls" komento listaa luettelon "hello", mutta ei sen alla olevaa "helloagain" luetteloa. 
+20.07 Tree on ohjelma joka listaa alemmat luettelot (directory) rekursiivisesti (recursive) tarkoittaen, että luettelojen sisäiset luettelot listataan myös. Tree EI listaa ylempänä olevia luetteloja. Tree on myös mielestäni selkeämpi kuin ls (huomattakoon että komennot eivät suoranaisesti ole verrattavissa tai yritä tehdä samaa). Kuvasta nähdään miten "ls" komento listaa luettelon "hello", mutta ei sen alla olevaa "helloagain" luetteloa. 
+
+
+## Tärkeät luettelot
+20.18 Aloitellaan tämä osio
+
+### Root 
+![add file: upload](H2Kuva7.jpg)
+20:20 Ylin kansio koko järjestelmässä, sisältää kirjaimellisesti kaiken.
+
+### Home
+![add file: upload](H2Kuva8.jpg)
+20:23 Home on toiseksi ylin kansio, joka sisältää kaikkien käyttäjien omat kansiot. 
+
+### Käyttäjän kansio
+![add file: upload](H2Kuva9.jpg)
+20:24 Käyttäjän oma kansio (Ei yhtenäistä nimeä, kuvassa /rome/) sisältää käyttäjän kansiot, ohjelmat ja tiedostot. 
+
+### Etc
+20:26 
