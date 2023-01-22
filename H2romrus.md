@@ -82,7 +82,7 @@ Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onni
 
 Grep käyttö 1: ![add file: upload](H2Kuva14.jpg) tarkistin grepin sen hetkisen version
 
-Grep käyttö 2: ![add file: upload](H2Kuva15.jpg) kirjoitin grep Hello *    hello on se merkkijono jota tuossa tapauksessa etsitään, ja tähti merkitsee että etsimme kaikkialta, emmekä vain yhdestä tiedostosta. Sain palautteeksi "rome: is a directory", grep ei normaalisti osaa etsiä directorysta; korjataan se.
+Grep käyttö 2: ![add file: upload](H2Kuva15.jpg) kirjoitin grep Hello * "hello" on se merkkijono jota tuossa tapauksessa etsitään, ja tähti merkitsee että etsimme kaikkialta, emmekä vain yhdestä tiedostosta. Sain palautteeksi "rome: is a directory", grep ei normaalisti osaa etsiä directorysta; korjataan se.
 
 Grep käyttö 3: ![add file: upload](H2Kuva16.jpg) hain saman komennon uudelleen, mutta lisäsin "-r" joka määrää komennon toiminnan tapahtuvan rekursiivisesti, eli "syvemmin". Kävin siis viimeisessä tapauksessa läpi käyttäjäkansio "rome:n" sisällä olevat kansiot, sekä tiedostot. Tällä kertaa komento palautti mistä tuo teksti löytyy kätevästi tiedostosijainnin kera.
 
