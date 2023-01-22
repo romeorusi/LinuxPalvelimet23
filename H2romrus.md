@@ -17,3 +17,8 @@ ranskalaisella viivalla.
 - Muuta tietoa ja komentoja voi tarvittaessa tarkastella aikaisemmasta linkistä tai etsimällä netistä.
 
 
+# H2
+
+19:30 Aloitin asentamalla micro:n kirjoittamalla "sudo apt-get install micro" ja kirjoittamalla "y" pyydettäessä. Annoin asennuksen hoitaa itsensä loppuun ja kirjoitin komentoriville "micro", varmistin näin että asennus on onnistunut ja ohjelma toimii. 
+
+19:33 Koitin listata koneen raudan komennolla "sudo lshw -short -sanitize", tämä ei toiminut sillä lshw ei ollut asennettuna, asensin sen komennolla "sudo apt-get install lshw"
