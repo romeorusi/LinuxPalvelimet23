@@ -69,9 +69,28 @@ Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onni
 
 ### Media
 ![add file: upload](H2Kuva11.jpg)
-Mediasta löytyy ulkoiset kovalevyt ja cdasemat.
+20:35 Mediasta löytyy ulkoiset kovalevyt ja cdasemat.
 
 ### var/log
 ![add file: upload](H2Kuva12.jpg)
-var/log sisältää loegja, eli kirjauksia tapahtumista. User.log esimerkiksi näyttää kirjauksia käyttäjän toiminnasta. ![add file: upload](H2Kuva13.jpg)
+20:50 var/log sisältää logeja, eli kirjauksia tapahtumista. User.log esimerkiksi näyttää kirjauksia käyttäjän toiminnasta. ![add file: upload](H2Kuva13.jpg)
+
+
+## The friendly M.
+
+21:11 Grep tarkoittaa "global regular expression print". Sitä voidaan käyttää kun etsitään tiedostoista tiettyjä merkkijonoja.
+Grep käyttö 1: ![add file: upload](H2Kuva14.jpg) tarkistin grepin sen hetkisen version
+
+Grep käyttö 2: ![add file: upload](H2Kuva15.jpg) kirjoitin grep Hello * hello on se merkkijono jota tuossa tapauksessa etsitään, ja tähti merkitsee että etsimme kaikkialta, emmekä vain yhdestä tiedostosta. Sain palautteeksi "rome: is a directory", grep ei normaalisti osaa etsiä directorysta; korjataan se.
+
+Grep käyttö 3: ![add file: upload](H2Kuva16.jpg) hain saman komennon uudelleen, mutta lisäsin "-r" joka määrää komennon toiminnan tapahtuvan rekursiivisesti, eli "syvemmin". Kävin siis viimeisessä tapauksessa läpi käyttäjäkansio "rome:n" sisällä olevat kansiot, sekä tiedostot. Tällä kertaa komento palautti mistä tuo teksti löytyy kätevästi tiedostosijainnin kera.
+
+
+
+
+
+Lähteet: 
+https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h2-komentaja-pingviini (luettu 22/01/2023)
+https://www.computerhope.com/unix/ugrep.htm#:~:text=Grep%2C%20which%20stands%20for%20"global,outputs%20the%20results%20for%20you. (luettu 22/01/2023)
+
 
