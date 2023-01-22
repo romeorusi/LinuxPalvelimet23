@@ -10,7 +10,7 @@
 Ensimmäinen tehtävä on tiivistää https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited sivun sisältö muutamalla
 ranskalaisella viivalla.
 
-- Komentoriviä on käytetty jo ennen internetiä ja se on olennainen sekä käytännöllinen osa linuxin käyttöä
+- Komentoriviä on käytetty jo ennen internetiä ja se on olennainen sekä käytännöllinen osa linuxin käyttöä.
 - Yleisesti ottaen komentoja ajettaessa varoituksia ei tule, mikäli mitään ei "näy" tapahtuvan, komento on todennäköisesti ajettu onnistuneesti.
 - Lähtökohtaisesti kaikki komennot ajetaan vähimmillä oikeuksilla, kirjoitettaessa "sudo" komennon eteen ajetaan komento täysillä oikeuksilla.
 - Ohjelmat asennetaan komentoriviä käyttäen valmiina paketteina, toisin kuin esim windowsissa.
@@ -19,7 +19,7 @@ ranskalaisella viivalla.
 
 # H2
 
-19:30 Aloitin asentamalla micro:n kirjoittamalla "sudo apt-get install micro" ja kirjoittamalla "y" pyydettäessä. Annoin asennuksen hoitaa itsensä loppuun ja kirjoitin komentoriville "micro", varmistin näin että asennus on onnistunut ja ohjelma toimii. 
+19:30 Aloitin asentamalla micro:n kirjoittamalla    "sudo apt-get install micro" ja kirjoittamalla "y" pyydettäessä. Annoin asennuksen hoitaa itsensä loppuun ja kirjoitin komentoriville "micro", varmistin näin että asennus on onnistunut ja ohjelma toimii. 
 
 19:33 Koitin listata koneen raudan komennolla "sudo lshw -short -sanitize", tämä ei toiminut sillä lshw ei ollut asennettuna, asensin sen komennolla "sudo apt-get install lshw"
 ![Add file: Upload](H2Kuva1.jpg)
@@ -28,7 +28,7 @@ ranskalaisella viivalla.
 ![Add file: Upload](H2Kuva2.jpg)
 LSHW listaa tietokoneen raudan (muisti, usb-laitteet, näyttö tms.) ja kategorioi ne. Tietoja voidaan käyttää ongelmien selvityksessä ja niistä voin tarvittaessa hakea lisää tietoa.
 
-19:44 Asensin 3 valitsemaani ohjelmaa, ohjelmat jotka valitsin olivat git, tree ja nano. Ennen ohjelmien asentamista muistin pakettien päivityksen olemassa olon ja ajoin sen komennolla "sudo apt-get update" tuo olisi mieluummin pitänyt tehdä aikaisemmin ennen LSHW:n asentamista, mutta parempi myöhään kuin ei milloinkaan 🙂.
+19:44 Asensin 3 valitsemaani ohjelmaa, ohjelmat jotka valitsin olivat git, tree ja nano. Ennen ohjelmien asentamista muistin pakettien päivityksen olemassaolon ja ajoin sen komennolla "sudo apt-get update" tuo olisi mieluummin pitänyt tehdä aikaisemmin ennen LSHW:n asentamista, mutta parempi myöhään kuin ei milloinkaan 🙂.
 Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onnistui ongelmitta.
 ![add file: upload](H2Kuva3.jpg)
 
