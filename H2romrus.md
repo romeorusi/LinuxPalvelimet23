@@ -78,7 +78,8 @@ Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onni
 
 ## The friendly M.
 
-21:11 Grep tarkoittaa "global regular expression print". Sitä voidaan käyttää kun etsitään tiedostoista tiettyjä merkkijonoja. /
+21:11 Grep tarkoittaa "global regular expression print". Sitä voidaan käyttää kun etsitään tiedostoista tiettyjä merkkijonoja.  
+
 Grep käyttö 1: ![add file: upload](H2Kuva14.jpg) tarkistin grepin sen hetkisen version
 
 Grep käyttö 2: ![add file: upload](H2Kuva15.jpg) kirjoitin grep Hello * hello on se merkkijono jota tuossa tapauksessa etsitään, ja tähti merkitsee että etsimme kaikkialta, emmekä vain yhdestä tiedostosta. Sain palautteeksi "rome: is a directory", grep ei normaalisti osaa etsiä directorysta; korjataan se.
