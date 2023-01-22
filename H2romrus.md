@@ -24,5 +24,10 @@ ranskalaisella viivalla.
 19:33 Koitin listata koneen raudan komennolla "sudo lshw -short -sanitize", tämä ei toiminut sillä lshw ei ollut asennettuna, asensin sen komennolla "sudo apt-get install lshw"
 ![Add file: Upload](H2Kuva1.jpg)
 
-Asennuksen valmistuttua tarkistin ohjelman toimivan kirjoittamalla komennon "sudo lshw -short -sanitize" uudelleen. Tällä kertaa komento toimi odotetusti.
+19:38 Asennuksen valmistuttua tarkistin ohjelman toimivan kirjoittamalla komennon "sudo lshw -short -sanitize" uudelleen. Tällä kertaa komento toimi odotetusti.
 ![Add file: Upload](H2Kuva2.jpg)
+LSHW listaa tietokoneen raudan (muisti, usb-laitteet, näyttö tms.) ja kategorioi ne. Tietoja voidaan käyttää ongelmien selvityksessä ja niistä voin tarvittaessa hakea lisää tietoa.
+
+19:44 Asensin 3 valitsemaani ohjelmaa, ohjelmat jotka valitsin olivat git, tree ja nano. Ennen ohjelmien asentamista muistin pakettien päivityksen olemassa olon ja ajoin sen komennolla "sudo apt-get update" tuo olisi mieluummin pitänyt tehdä aikaisemmin ennen LSHW:n asentamista, mutta parempi myöhään kuin ei milloinkaan 🙂.
+Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onnistui ongelmitta.
+![add file: upload](H2Kuva3.jpg)
