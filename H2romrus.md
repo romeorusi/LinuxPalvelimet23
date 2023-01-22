@@ -64,4 +64,14 @@ Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onni
 20:24 Käyttäjän oma kansio (Ei yhtenäistä nimeä, kuvassa /rome/) sisältää käyttäjän kansiot, ohjelmat ja tiedostot. 
 
 ### Etc
-20:26 
+![add file: upload](H2Kuva10.jpg)
+20:26 Etc on kansio jossa kaikki konfiguraatioihin liittyvät tiedostot ovat. Asetuksia toimintaan liittyen. Tiedostoja on monia, käyttäjän, version ja ohjelmistojen tietoja löytyy etc-kansiosta.
+
+### Media
+![add file: upload](H2Kuva11.jpg)
+Mediasta löytyy ulkoiset kovalevyt ja cdasemat.
+
+### var/log
+![add file: upload](H2Kuva12.jpg)
+var/log sisältää loegja, eli kirjauksia tapahtumista. User.log esimerkiksi näyttää kirjauksia käyttäjän toiminnasta. ![add file: upload](H2Kuva13.jpg)
+
