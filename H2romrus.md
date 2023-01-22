@@ -31,3 +31,18 @@ LSHW listaa tietokoneen raudan (muisti, usb-laitteet, näyttö tms.) ja kategori
 19:44 Asensin 3 valitsemaani ohjelmaa, ohjelmat jotka valitsin olivat git, tree ja nano. Ennen ohjelmien asentamista muistin pakettien päivityksen olemassa olon ja ajoin sen komennolla "sudo apt-get update" tuo olisi mieluummin pitänyt tehdä aikaisemmin ennen LSHW:n asentamista, mutta parempi myöhään kuin ei milloinkaan 🙂.
 Asensin ohjelmat komennolla "sudo apt-get install git tree nano -y". Kaikki onnistui ongelmitta.
 ![add file: upload](H2Kuva3.jpg)
+
+## Git
+![add file: upload](H2Kuva4.jpg)
+
+19.50 Git on yleispätevä avoimen lähdekoodin versionhallintaohjelma, käytännössä GITillä on muitakin käyttömahdollisuuksia (kuten tämä raportti itsessään todistaa)
+
+## Nano
+![add file: upload](H2Kuva5.jpg)
+
+19.59 Nano on tekstieditori jonka tarkoituksena on olla mahdollisimman helppokäyttöinen ja tarjota vain välttämättömät toiminnot.
+
+## Tree
+![add file: upload](H2Kuva6.jpg)
+
+20.07 Tree on ohjelma joka listaa luettelot (directory) rekursiivisesti (recursive) tarkoittaen, että luettelojen sisäiset luettelot listataan myös. Tree on myös mielestäni selkeämpi kuin ls, sillä siitä hahmottaa paremmin kokonaisuuden. Kuvasta nähdään miten "ls" komento listaa luettelon "hello", mutta ei sen alla olevaa "helloagain" luetteloa. 
