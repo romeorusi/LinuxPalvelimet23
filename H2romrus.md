@@ -23,3 +23,6 @@ ranskalaisella viivalla.
 
 19:33 Koitin listata koneen raudan komennolla "sudo lshw -short -sanitize", tämä ei toiminut sillä lshw ei ollut asennettuna, asensin sen komennolla "sudo apt-get install lshw"
 ![Add file: Upload](H2Kuva1.jpg)
+
+Asennuksen valmistuttua tarkistin ohjelman toimivan kirjoittamalla komennon "sudo lshw -short -sanitize" uudelleen. Tällä kertaa komento toimi odotetusti.
+![Add file: Upload](H2Kuva2.jpg)
