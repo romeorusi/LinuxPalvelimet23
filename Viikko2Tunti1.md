@@ -171,7 +171,7 @@ Käytin komentoa
  
 # Loppu 
 
-Tehtävä on valmis 20:29, en tehnyt viimeistä vapaavalintaista tehtävää. Olisin lähes minkä tahansa muun tehtävän tehnyt, mutta olen julistanut henkilökohtaisen sodan REGEXiä vastaan, vihaan sen kirjoittamista ja toivon voivani välttää sen kirjoittamisen tulevaisuudessa. Mikäli joudun sitä kirjoittamaan koitan etsiä vaihtoehtoisia keinoja.
+Tehtävä on valmis 20:29, en tehnyt viimeistä vapaavalintaista tehtävää. Olisin lähes minkä tahansa muun tehtävän tehnyt, mutta olen julistanut henkilökohtaisen sodan REGEXiä vastaan, vihaan sen kirjoittamista ja toivon voivani välttää sen kirjoittamisen tulevaisuudessa. Mikäli joudun sitä kirjoittamaan koitan etsiä vaihtoehtoisia keinoja. Viha perustuu muistaakseni ohjelmointi1-kurssilla tehtävään ohjelmaan joka antoi salasanalle tietyt vaatimukset ja tarkasti sen toiminnan. 
 
 
 
