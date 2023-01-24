@@ -182,7 +182,8 @@ Tehtävä on valmis 20:29, en tehnyt viimeistä vapaavalintaista tehtävää. Ol
 4) https://www.wired.com/story/empress-drm-cracking-denuvo-video-game-piracy/ "Empress" (luettu 24/1/2023
 5) https://git-scm.com/about/free-and-open-source "Git license" (luettu 24/1/2023)
 6) https://en.wikipedia.org/wiki/GNU_nano#:~:text=Unlike%20Pico%2C%20nano%20is%20licensed,the%20GNU%20Project%20in%202001. "GNU Nano" (Luettu 24/1/2023)
-7) https://chat.openai.com/chat 
+7) https://www.nethack.org/common/license.html "Nethack license" (luettu 24/1/2023)
+
 
 
 
