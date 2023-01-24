@@ -148,7 +148,7 @@ Ei
 
 Aloitetaan 19:52
 
-![add file: upload](viikko2kuvat/v2k1.jpg)
+![add file: upload](Viikko2Kuvat/v2k1.jpg)
 
 Käytin komentoa 
 
@@ -160,7 +160,7 @@ komento etsii sanoja joissa on iso tai pieni kirjain a tiedostosta nimeltä rand
 
 Aloitetaan 20:10
 
-![add file: upload](viikko2kuvat/v2k2)
+![add file: upload](Viikko2Kuvat/v2k2)
 
 Käytin komentoa
 
