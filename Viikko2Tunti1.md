@@ -19,14 +19,14 @@
 
 - Aloitetaan 18:23 24/01/2023
 
-## Virtualisointi
+### Virtualisointi
 - Virtualisoitu VirtualBox 7.0.4
 - Käyttöjärjestelmänä Debian GNU/Linux 11 (bullseye) x86-64 arkkitehtuuri 
 - 8GB RAM
 - 60GB dynaamista muistia (NVMe SSD)
 - 2 Corea Ryzen 5 3600 6-core
 
-## "Host" kone
+### "Host" kone
 - Win 10 pro x64
 - Ryzen 5 3600 6-core
 - GPU RTX 3060
