@@ -160,7 +160,7 @@ komento etsii sanoja joissa on iso tai pieni kirjain a tiedostosta nimeltä rand
 
 Aloitetaan 20:10
 
-![add file: upload](Viikko2Kuvat/v2k2)
+![add file: upload](Viikko2Kuvat/v2k2.jpg)
 
 Käytin komentoa
 
