@@ -42,7 +42,7 @@
 
 # Tiivistelmä  
 
-Aloitettu 18:30
+Aloitetaan 18:30
 
 Ensimmäinen tehtävä on tiivistää muutamalla ranskalaisella viivalla https://www.gnu.org/philosophy/free-sw.html sekä http://lib.tkk.fi/Diss/2005/isbn9529187793/isbn9529187793.pdf (sivut 113-121).
 
