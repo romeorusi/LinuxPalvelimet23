@@ -2,7 +2,7 @@
 
 ### Sisällysluettelo
 
-- [Aloitustilanne](#aloitustilanne)
+- [Aloitustilanne](#Aloitustilanne)
 - [Tiivistelmä](#tiivistelmä)
 - [Kolmen ohjelman lisenssit](#kolmen-ohjelman-lisenssit)
   - [Git](#git)
