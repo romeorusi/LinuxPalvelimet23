@@ -104,7 +104,10 @@ Valitsin tehdä tiivistelmän seuraavasta artikkelista ja kommenteista https://j
 - On paljon komentoja jotka ovat hyödyllisiä, niillä voidaan korvata olemassaolevia komentoja tai ne voivat olla täysin uusia.
 - Yhtenä esimerkkinä ripgrep joka tekee saman asian kuin grep mutta ei huomioi esim. piilotettuja tiedostoja. Ripgrep on tehokkaampi kuin grep ja sillä voi etsiä useita malleja noudattaen.
 - Toinen hyvä esimerkki on tldr jolla korvataan man, se palauttaa huomattavasti helpommin luettavan, mutta saman tiedon sisältävän tulosteen. 
+
 [!add file: upload](Viikko2Kuvat2/v2t2k4.jpg)
+
+
 - Kommenteissa käyttäjät kertoivat muita esimerkkejä komennoista jotka ovat hyödyllisiä mutta eivät yhtä tunnettuja.
 
 
