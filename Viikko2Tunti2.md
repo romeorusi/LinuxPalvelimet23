@@ -78,6 +78,8 @@ Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viik
 
 # Aiheuta
 
+19:17
+
 Aiheutin var/log/apache2/access.log:iin epäonnistuneen tapahtuman kirjoittamalla selaimeen localhostin perään /aiheutan lokiin tapahtuman. Tämä ei onnistu sillä tuosta osoitteesta ei löydy mitään palautettavaa tietoa.
 
 ![add file: upload](Viikko2Kuvat2/v2t2k1.jpg)
@@ -95,6 +97,13 @@ Aiheutin lokiin onnistuneen kirjauksen avaamalla selaimen localhost sivun.
 Alussa näkyvä sarja tarkoittaa IP:tä josta loki on tehty, tämä on tietokoneen oma paikallinen ip. Sen jälkeen näkyy tietoa siitä milloin lokikirjaus on tehty (+0200 tarkoittaa aikaa tunteina jonka tietokone on jäljessä UTC:sta). Seuraavaksi näkyy komento joka selaimelle on annettu (get /) ja statuskoodi(200) jonka selain on palauttanut, 3380 tarkoittaa tiedon määrää joka tavuina on palautettu. Lopuksi löytyy tietoa selaimen ja käyttöjärjestelmän versiosta.
 
 
+# Tiivistelmä
+ 20:00
+Valitsin tehdä tiivistelmän seuraavasta artikkelista ja kommenteista https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
+- On paljon komentoja jotka ovat hyödyllisiä, niillä voidaan korvata olemassaolevia komentoja tai ne voivat olla täysin uusia.
+- Yhtenä esimerkkinä ripgrep joka tekee saman asian kuin grep mutta ei huomioi esim. piilotettuja tiedostoja. Ripgrep on tehokkaampi kuin grep ja sillä voi etsiä useita malleja noudattaen.
+- Toinen hyvä esimerkki on tldr jolla korvataan man, se palauttaa huomattavasti helpommin luettavan, mutta saman tiedon sisältävän tulosteen. [!add file: upload](Viikko2Kuvat2/v2t2k4.jpg)
 
 
 # Lähteet 
@@ -102,3 +111,5 @@ Alussa näkyvä sarja tarkoittaa IP:tä josta loki on tehty, tämä on tietokone
 1) https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h4-tukki
 2) https://en.wikipedia.org/wiki/LightDM 
 3) https://embracethered.com/blog/posts/2021/linux-user-uid-zero-backdoor/#:~:text=On%20Unix%2FLinux%20users%20with,or%20group%20identifier%20to%20zero.
+4) https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+5) https://tldr.sh
