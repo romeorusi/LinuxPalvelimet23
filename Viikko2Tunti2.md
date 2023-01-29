@@ -52,7 +52,7 @@ Loki on tapahtunut Tammikuun 29 päivä klo 18:35, järjestelmän nimi on "rom3v
 
 Valitsin kohdan Jan 29 18:34:55 rom3vm lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=117) by (uid=0)
 
-Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynnist LIGHTDM:än käyttäen PAM_unix:ia, jolla autentikoidaan käyttäjä PAM on sovellus jolla voidaan hoitaa autentikointi "oikean" sovelluksen ulkopuolisesti. Lightdm on ohjelma joka piirtää käyttöliittymän käyttäjälle. Tämä sessio LightDM:ssä avattiin käyttäjälle jonka UID on 117 käyttäjän jonka UID on 0 toimesta. UID 0 on "superuser" eli /root/ käyttäjä. Tällä käyttäjällä on eniten (kaikki) oikeuksia ja voi tehdä mitä tahansa, SUDO ajaa ohjelmia tämän "käyttäjän" oikeuksilla
+Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynnisti LIGHTDM:än käyttäen PAM_unix:ia, jolla autentikoidaan käyttäjä. PAM on sovellus jolla voidaan hoitaa autentikointi "oikean" sovelluksen ulkopuolisesti. Lightdm on ohjelma joka piirtää käyttöliittymän. Tämä sessio LightDM:ssä avattiin käyttäjälle jonka UID on 117, käyttäjän jonka UID on 0 toimesta. UID 0 on "superuser" eli /root/ käyttäjä. Tällä käyttäjällä on eniten (kaikki) oikeuksia ja voi tehdä mitä tahansa, SUDO ajaa ohjelmia tämän "käyttäjän" oikeuksilla.
 
 
 
@@ -66,16 +66,13 @@ Tämän käynnistyttyä avasin selaimen ja kirjoitin hakukentään localhost, ai
 
 Valitsin lokin 127.0.0.1 - - [29/Jan/2023:19:09:25 +0200] "GET /moi HTTP/1.1" 404 487 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
-Lokissa näkyy IP johon selain yhdistää (tässä tapauksessa 127.0.0.1 joka on localhostin IP). Lokissa näkyy tämän jälkeen ajankohta jolloin toiminto tehtiin, sekä aikavyöhyke. Tämän jälkeen lokista löytyy toiminto joka ajettiin (GET /(MOI)) joka viittaa localhost/moi linkissä käymiseen, seuraavaksi lukee virhekoodi jonka selain palautti (404, ei löytynyt pyydetty asiaa/resurssia tms.) 487 tarkoittaa tiedon määrää tavuina (byte). Lopuksi logista löytyy käyttöjärjestelmän ja selaimen tietoja, kuten versio.
+Lokissa näkyy IP johon selain yhdistää (tässä tapauksessa 127.0.0.1 joka on localhostin IP). Lokissa näkyy tämän jälkeen ajankohta jolloin toiminto tehtiin, sekä aikavyöhyke. Tämän jälkeen lokista löytyy toiminto joka ajettiin (GET /(MOI)) joka viittaa localhost/moi linkissä käymiseen, seuraavaksi lukee virhekoodi jonka selain palautti (404, ei löytynyt pyydetty asiaa/resurssia tms.) 487 tarkoittaa tiedon määrää tavuina (byte). Lopuksi lokista löytyy käyttöjärjestelmän ja selaimen tietoja, kuten versio.
 
 4) /var/log/apache2/error.log
-
-Pääsin suoraan tutkimaan lokia komennolla
-
   
 Valitsin lokin [Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations 
 
-Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono joka ei ole merkittäväm tehtävän kannalta ja jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
+Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono joka ei ole merkittävä tehtävän kannalta ja jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
 
 # Aiheuta
 
@@ -87,7 +84,7 @@ Aiheutin var/log/apache2/access.log:iin epäonnistuneen tapahtuman kirjoittamall
 
 ![add file: upload](Viikko2Kuvat2/v2t2k2.jpg)
 
-loki 127.0.0.1 - - [29/Jan/2023:19:31:23 +0200] "GET /aiheutan%20lokiin%20tapahtuman HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" on se jonka aiheutin. Tässä lokissa alussa näkyy ip, joka on tietokoneen lokaali ip, sen jälkeen näkyy ajankohta jolloin lokikirjaus on tapahtunu, sitten komento (get) ja syöte joka linkin perään on kirjoitettu. 404 tarkoittaa selaimen palauttamaan virheilmoitusta ja 488 tavujen määrää jonka verran tietoa on tullut. Lopussa näkyy selaimen ja käyttöjärjestelmän versiot.
+loki 127.0.0.1 - - [29/Jan/2023:19:31:23 +0200] "GET /aiheutan%20lokiin%20tapahtuman HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" on se jonka aiheutin. Tässä lokissa alussa näkyy ip, joka on tietokoneen paikallinen ip, sen jälkeen näkyy ajankohta jolloin lokikirjaus on tapahtunut, sitten komento (get) ja syöte joka linkin perään on kirjoitettu. 404 tarkoittaa selaimen palauttamaan virheilmoitusta ja 488 tavujen määrää jonka verran tietoa on tullut. Lopussa näkyy selaimen ja käyttöjärjestelmän versiot.
 
 
 ![add file: upload](Viikko2Kuvat2/v2t2k3.jpg)
