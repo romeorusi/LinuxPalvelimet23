@@ -34,7 +34,7 @@
 
 Saimme tehtäväksi https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h4-tukki analysioida yhden rivin neljästä eri lokista. Tutkin kaikki samalla komennolla
 
-  sudo cat x (x tarkoittaa lokin nimeä, joka muuttuu)
+    sudo cat x (x tarkoittaa lokin nimeä, joka muuttuu)
 
 1) /var/log/syslog
 
@@ -46,6 +46,7 @@ Loki on tapahtunut Tammikuun 29 päivä klo 18:35, järjestelmän nimi on "rom3v
 
 
 2) /var/log/auth.log
+
 
 Valitsin kohdan Jan 29 18:34:55 rom3vm lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=117) by (uid=0)
 
@@ -68,7 +69,6 @@ Lokissa näkyy IP johon selain yhdistää (tässä tapauksessa 127.0.0.1 joka on
 
 Pääsin suoraan tutkimaan lokia komennolla
 
-    sudo cat apache2/error.log
   
 Valitsin lokin [Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations 
 
