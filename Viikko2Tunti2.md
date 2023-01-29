@@ -5,6 +5,7 @@
 - [Aloitustilanne](#Aloitustilanne)
 - [Tukki](#Tukki)
 - [Aiheuta](#Aiheuta)
+- [Tiivistelmä](#Tiivistelmä)
 - [Lähteet](#lähteet)
 
 
