@@ -52,7 +52,7 @@ Loki on tapahtunut Tammikuun 29 päivä klo 18:35, järjestelmän nimi on "rom3v
 
 Valitsin kohdan Jan 29 18:34:55 rom3vm lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=117) by (uid=0)
 
-Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynnist LIGHTDM:än. Lightdm on ohjelma joka piirtää käyttöliittymän käyttäjälle. Tämä sessio LightDM:ssä avattiin käyttäjälle jonka UID on 117 käyttäjän jonka UID on 0 toimesta. UID 0 on "superuser" eli /root/ käyttäjä. Tällä käyttäjällä on eniten (kaikki) oikeuksia ja voi tehdä mitä tahansa, SUDO ajaa ohjelmia tämän "käyttäjän" oikeuksilla
+Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynnist LIGHTDM:än käyttäen PAM_unix:ia, jolla autentikoidaan käyttäjä PAM on sovellus jolla voidaan hoitaa autentikointi "oikean" sovelluksen ulkopuolisesti. Lightdm on ohjelma joka piirtää käyttöliittymän käyttäjälle. Tämä sessio LightDM:ssä avattiin käyttäjälle jonka UID on 117 käyttäjän jonka UID on 0 toimesta. UID 0 on "superuser" eli /root/ käyttäjä. Tällä käyttäjällä on eniten (kaikki) oikeuksia ja voi tehdä mitä tahansa, SUDO ajaa ohjelmia tämän "käyttäjän" oikeuksilla
 
 
 
@@ -60,7 +60,7 @@ Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynn
  
 En päässyt tutkimaan mitään ennen kuin käynnistin apachen komennolla 
 
-    $sudo systemctl start apache2.service
+    sudo systemctl start apache2.service
 
 Tämän käynnistyttyä avasin selaimen ja kirjoitin hakukentään localhost, aiheutin lokeja kirjoittamalla hakukenttään localhost/x, jossa x on eri sanoja.
 
@@ -118,6 +118,7 @@ Tehtävä on valmis 20:18
 (kaikki luettu 29/1/2023)
 1) https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h4-tukki
 2) https://en.wikipedia.org/wiki/LightDM 
-3) https://embracethered.com/blog/posts/2021/linux-user-uid-zero-backdoor/#:~:text=On%20Unix%2FLinux%20users%20with,or%20group%20identifier%20to%20zero.
-4) https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
-5) https://tldr.sh
+3) https://en.wikipedia.org/wiki/Linux_PAM
+4) https://embracethered.com/blog/posts/2021/linux-user-uid-zero-backdoor/#:~:text=On%20Unix%2FLinux%20users%20with,or%20group%20identifier%20to%20zero.
+5) https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+6) https://tldr.sh
