@@ -57,7 +57,7 @@ Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynn
  
 En päässyt tutkimaan mitään ennen kuin käynnistin apachen komennolla 
 
-  sudo systemctl start apache2.service
+  $sudo systemctl start apache2.service
 
 Tämän käynnistyttyä avasin selaimen ja kirjoitin hakukentään localhost, aiheutin lokeja kirjoittamalla hakukenttään localhost/x, jossa x on eri sanoja.
 Valitsin lokin 127.0.0.1 - - [29/Jan/2023:19:09:25 +0200] "GET /moi HTTP/1.1" 404 487 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
