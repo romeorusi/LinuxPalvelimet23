@@ -32,7 +32,7 @@
 
 18:36
 
-Saimme tehtäväksi https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h4-tukki analysioida yhden rivin neljästä eri lokista. Tutkin kaikki samalla komennolla
+Saimme tehtäväksi https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h4-tukki analysioida yhden rivin neljästä eri lokista. Tutkin kaikkia samalla komennolla, muuttaen tiedostosijaintia lopussa (esimerkissä x)
 
     sudo cat x (x tarkoittaa lokin nimeä, joka muuttuu)
 
