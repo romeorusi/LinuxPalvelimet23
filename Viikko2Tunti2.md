@@ -3,7 +3,8 @@
 ### Sisällysluettelo
 
 - [Aloitustilanne](#Aloitustilanne)
-- 
+- [Tukki](#Tukki)
+- [Aiheuta](#Aiheuta)
 - [Lähteet](#lähteet)
 
 
@@ -74,6 +75,27 @@ Pääsin suoraan tutkimaan lokia komennolla
 Valitsin lokin [Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations 
 
 Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono joka ei ole merkittäväm tehtävän kannalta ja jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
+
+# Aiheuta
+
+Aiheutin var/log/apache2/access.log:iin epäonnistuneen tapahtuman kirjoittamalla selaimeen localhostin perään /aiheutan lokiin tapahtuman. Tämä ei onnistu sillä tuosta osoitteesta ei löydy mitään palautettavaa tietoa.
+
+![add file: upload](v2t2k1.jpg)
+
+![add file: upload](v2t2k2.jpg)
+
+loki 127.0.0.1 - - [29/Jan/2023:19:31:23 +0200] "GET /aiheutan%20lokiin%20tapahtuman HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" on se jonka aiheutin. Tässä lokissa alussa näkyy ip, joka on tietokoneen lokaali ip, sen jälkeen näkyy ajankohta jolloin lokikirjaus on tapahtunu, sitten komento (get) ja syöte joka linkin perään on kirjoitettu. 404 tarkoittaa selaimen palauttamaan virheilmoitusta ja 488 tavujen määrää jonka verran tietoa on tullut. Lopussa näkyy selaimen ja käyttöjärjestelmän versiot.
+
+
+![add file: upload](v2t2k3.jpg)
+
+Aiheutin lokiin onnistuneen kirjauksen avaamalla selaimen localhost sivun.
+
+127.0.0.1 - - [29/Jan/2023:19:45:29 +0200] "GET / HTTP/1.1" 200 3380 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
+Alussa näkyvä sarja tarkoittaa IP:tä josta loki on tehty, tämä on tietokoneen oma paikallinen ip. Sen jälkeen näkyy tietoa siitä milloin lokikirjaus on tehty (+0200 tarkoittaa aikaa tunteina jonka tietokone on jäljessä UTC:sta). Seuraavaksi näkyy komento joka selaimelle on annettu (get /) ja statuskoodi(200) jonka selain on palauttanut, 3380 tarkoittaa tiedon määrää joka tavuina on palautettu. Lopuksi löytyy tietoa selaimen ja käyttöjärjestelmän versiosta.
+
+
+
 
 # Lähteet 
 (kaikki luettu 29/1/2023)
