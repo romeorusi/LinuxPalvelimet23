@@ -50,7 +50,7 @@ Loki on tapahtunut Tammikuun 29 päivä klo 18:35, järjestelmän nimi on "rom3v
 2) /var/log/auth.log
 
 
-Valitsin kohdan Jan 29 18:34:55 rom3vm lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=117) by (uid=0)
+Valitsin kohdan ```Jan 29 18:34:55 rom3vm lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=117) by (uid=0)```
 
 Tämä tarkoittaa että 29 tammikuuta 18:34 järjestelmä nimeltä rom3vm käynnisti LIGHTDM:än käyttäen PAM_unix:ia, jolla autentikoidaan käyttäjä. PAM on sovellus jolla voidaan hoitaa autentikointi "oikean" sovelluksen ulkopuolisesti. Lightdm on ohjelma joka piirtää käyttöliittymän. Tämä sessio LightDM:ssä avattiin käyttäjälle jonka UID on 117, käyttäjän jonka UID on 0 toimesta. UID 0 on "superuser" eli /root/ käyttäjä. Tällä käyttäjällä on eniten (kaikki) oikeuksia ja voi tehdä mitä tahansa, SUDO ajaa ohjelmia tämän "käyttäjän" oikeuksilla.
 
@@ -64,13 +64,13 @@ En päässyt tutkimaan mitään ennen kuin käynnistin apachen komennolla
 
 Tämän käynnistyttyä avasin selaimen ja kirjoitin hakukentään localhost, aiheutin lokeja kirjoittamalla hakukenttään localhost/x, jossa x on eri sanoja.
 
-Valitsin lokin 127.0.0.1 - - [29/Jan/2023:19:09:25 +0200] "GET /moi HTTP/1.1" 404 487 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
+Valitsin lokin ```127.0.0.1 - - [29/Jan/2023:19:09:25 +0200] "GET /moi HTTP/1.1" 404 487 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"```
 
 Lokissa näkyy IP johon selain yhdistää (tässä tapauksessa 127.0.0.1 joka on localhostin IP). Lokissa näkyy tämän jälkeen ajankohta jolloin toiminto tehtiin, sekä aikavyöhyke. Tämän jälkeen lokista löytyy toiminto joka ajettiin (GET /(MOI)) joka viittaa localhost/moi linkissä käymiseen, seuraavaksi lukee virhekoodi jonka selain palautti (404, ei löytynyt pyydettyä asiaa/resurssia tms.) 487 tarkoittaa tiedon määrää tavuina (byte). Lopuksi lokista löytyy käyttöjärjestelmän ja selaimen tietoja, kuten versio.
 
 4) /var/log/apache2/error.log
   
-Valitsin lokin [Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations 
+Valitsin lokin ```[Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations ```
 
 Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono joka ei ole merkittävä tehtävän kannalta ja jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
 
