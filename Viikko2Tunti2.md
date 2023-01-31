@@ -84,7 +84,7 @@ Aiheutin var/log/apache2/access.log:iin epäonnistuneen tapahtuman kirjoittamall
 
 ![add file: upload](Viikko2Kuvat2/v2t2k2.jpg)
 
-loki 127.0.0.1 - - [29/Jan/2023:19:31:23 +0200] "GET /aiheutan%20lokiin%20tapahtuman HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" on se jonka aiheutin. Tässä lokissa alussa näkyy ip, joka on tietokoneen paikallinen ip, sen jälkeen näkyy ajankohta jolloin lokikirjaus on tapahtunut, sitten komento (get) ja syöte joka linkin perään on kirjoitettu. 404 tarkoittaa selaimen palauttamaan virheilmoitusta ja 488 tavujen määrää jonka verran tietoa on tullut. Lopussa näkyy selaimen ja käyttöjärjestelmän versiot.
+loki ```127.0.0.1 - - [29/Jan/2023:19:31:23 +0200] "GET /aiheutan%20lokiin%20tapahtuman HTTP/1.1" 404 488 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"``` on se jonka aiheutin. Tässä lokissa alussa näkyy ip, joka on tietokoneen paikallinen ip, sen jälkeen näkyy ajankohta jolloin lokikirjaus on tapahtunut, sitten komento (get) ja syöte joka linkin perään on kirjoitettu. 404 tarkoittaa selaimen palauttamaan virheilmoitusta ja 488 tavujen määrää jonka verran tietoa on tullut. Lopussa näkyy selaimen ja käyttöjärjestelmän versiot.
 
 
 ![add file: upload](Viikko2Kuvat2/v2t2k3.jpg)
