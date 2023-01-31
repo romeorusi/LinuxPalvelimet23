@@ -72,7 +72,7 @@ Lokissa näkyy IP johon selain yhdistää (tässä tapauksessa 127.0.0.1 joka on
   
 Valitsin lokin ```[Sun Jan 29 18:34:54.798735 2023] [mpm_event:notice] [pid 972:tid 139752171171136] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations ```
 
-Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono joka ei ole merkittävä tehtävän kannalta ja jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
+Ensimmäisenä jälleen kerran löytyy tietoa siitä milloin loki tapahtui, viikonpäivää, kellonaikaa ja vuotta myöten. [mpm_event:notice] tarkoittaa lokin "tasoa" tässä tärkeä sana on "notice", joka tarkoittaa ilmoitusta. [pid 972:tid 139752171171136] on tunnistukseen liittyvä merkkijono jonka tarkkaa tarkoitusta en tiedä, tarvittaessa tuo auttaa identifioimaan tapahtumia tarkemmin. AH00489 on virhekoodi kyseiselle viestille ja sitä seuraava merkkijono on apachen versio. Viimeinen viesti configured -- resuming normal operations on helposti ihmisen ymmärrettävä tilannepäivitys serverin tilanteesta.
 
 # Aiheuta
 
