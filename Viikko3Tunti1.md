@@ -30,7 +30,7 @@
 
 
 # Tiivistelmä
-Saimme tehtäväksi kuunnella yhden jakson Indie Hacker podcastistä https://share.transistor.fm/s/940ae75e ja tiivistää sen parilla ranskalaisella viivalla. Valitsin jakson henkilöstä Mat De Sousa (uusin jakso).
+Saimme tehtäväksi kuunnella yhden jakson Indie Hacker podcastistä https://share.transistor.fm/s/940ae75e ja tiivistää sen parilla ranskalaisella viivalla. Valitsin jakson #266 henkilöstä Mat De Sousa (uusin jakso).
 
 - Jakso käsittelee Mat De Sousa:n matkaa omien sanojensa mukaan keskivertoisesta php-koodaajasta $37k/kk shopify sovellusten luojaksi.
 - Hän aloitti yksin ja palkkasi asiakaspalvelijaksi 6kk päästä yhden henkilön, lopussa tiimiin kuuluu 5 henkilöä.
