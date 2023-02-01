@@ -53,7 +53,7 @@ Tarkistin olevani oikeassa paikassa kirjoittamalla ```ls```. Tämän jälkeen av
 
     sudo micro index.html 
     
-Kopioin sieltä löytyvän koodin "online notepad:ille" jotta sain helposti palautettua kotisivun tehtävän jälkeen (koodin sai helposti kopioitua tekstieditorista painamalla ctrl + a, ctrl + c. Googlasin validoidun html 5 templaten ja täytin siihen yksinkertaista sisältöä ja tallensin. Apachen kotisivu näyttää nyt tältä:
+Kopioin sieltä löytyvän koodin "online notepad:ille" jotta sain helposti palautettua kotisivun tehtävän jälkeen (koodin sai helposti kopioitua tekstieditorista painamalla ctrl + a, ctrl + c. Googlasin validoidun html 5 templaten ja täytin siihen yksinkertaista sisältöä jonka jälkeen tallensin. Apachen kotisivu näyttää nyt tältä:
 ![add file: upload](V3Kuvat1/v3t1k1.jpg)
 
 
