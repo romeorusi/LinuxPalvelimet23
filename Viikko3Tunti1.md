@@ -5,7 +5,6 @@
 - [Esimerkkisivu](#esimerkkisivu)
 - [Käyttäjän sivut](#käyttäjän-sivut)
 - [Uusi käyttäjä kotisivuilla](#Uusi-käyttäjä-kotisivuilla)
-- 
 - [Lähteet](#lähteet)
 
 
@@ -40,6 +39,8 @@ Saimme tehtäväksi kuunnella yhden jakson Indie Hacker podcastistä https://sha
 -  Sousan kaikki sovelluksen jotka hän loi eivät saaneet käyttäjiä.
 -  Hän aloitti luomalla prototyypin photoshopissa, jota hän käytti palautteen saamiseen ja kysyi mitkä asiakkaat haluaisivat muuttaa sovelluksessa. Hän käytti noin viikon sovelluksen perus-osan luomiseen ja paranteli sekä korjasi ongelmia.
 -  Shopify alustana on hyvä, sillä käyttäjät luottavat siihen jo valmiiksi ja maksutiedot säilyvät (toki käyttäjien niin valitessa) joten myynti on helppoa.
+
+- Ehkä isoin oma "take away" jaksosta oli konkreettisen tekemisen tärkeys (joka itseltä koulutöiden lisäksi puuttuu täysin) ja se, että muita alustoja voi helposti käyttää hyväksi.
 
 
 # Esimerkkisivu
