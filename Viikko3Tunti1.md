@@ -4,6 +4,7 @@
 - [Tiivistelmä](#Tiivistelmä)
 - [Esimerkkisivu](#esimerkkisivu)
 - [Käyttäjän sivut](#käyttäjän-sivut)
+- [Uusi käyttäjä kotisivuilla](#Uusi-käyttäjä-kotisivuilla)
 - 
 - [Lähteet](#lähteet)
 
@@ -56,8 +57,9 @@ Tarkistin olevani oikeassa paikassa kirjoittamalla ```ls```. Tämän jälkeen av
 Kopioin sieltä löytyvän koodin "online notepad:ille" jotta sain helposti palautettua kotisivun tehtävän jälkeen (koodin sai helposti kopioitua tekstieditorista painamalla ctrl + a, ctrl + c. Googlasin validoidun html 5 templaten ja täytin siihen yksinkertaista sisältöä jonka jälkeen tallensin. Apachen kotisivu näyttää nyt tältä:
 ![add file: upload](V3Kuvat1/v3t1k1.jpg)
 
-
-Kuvan otettuani kopioin index.html tiedostoon takaisin aiemmin sieltä löytyneen koodin, jälleen avaamalla sen komennolla ```sudo micro index.html```. Mikäli en olisi saanut palautettua sivun ulkonäköä olisin voinut poistaa apachen kaikkine tietoineen ja asentaa sen uudelleen, seuraavilla komennoilla.
+Kun yritin palauttaa koodia avaamalla index.html tiedoston jälleen komennolla ```sudo micro index.html``` terminaali oli täysin mustana, komento ```micro index.html``` kuitenkin avasi tiedoston normaalisti, kopioituani koodin takaisin ja tallennettuani (ctrl+s) micro kysyi tahdonko muuttaa tiedostoa sudo-oikeuksilla johon vastasin kyllä, ja salasanan kirjoitettuani tuttu apachen kotisivu oli jälleen paikalla.
+        
+Mikäli en olisi saanut palautettua sivun ulkonäköä olisin voinut poistaa apachen kaikkine tietoineen ja asentaa sen uudelleen, seuraavilla komennoilla.
 
     sudo apt-get purge apache2
 
@@ -65,9 +67,30 @@ Kuvan otettuani kopioin index.html tiedostoon takaisin aiemmin sieltä löytynee
 
     sudo service apache2 start
 
-Kun yritin palauttaa koodia avaamalla index.html tiedoston jälleen komennolla ```sudo micro index.html``` terminaali oli täysin mustana, komento ```micro index.html``` kuitenkin avasi tiedoston normaalisti, kopioituani koodin takaisin ja tallennettuani (ctrl+s) micro kysyi tahdonko muuttaa tiedostoa sudo-oikeuksilla johon vastasin kyllä, ja salasanan kirjoitettuani tuttu apachen kotisivu oli jälleen paikalla.
+
 
 # Käyttäjän sivut
+
+Aloitetaan 15:26
+
+Loin käyttäjälle public_html directoryn komennolla
+
+        mkdir public_html
+
+Tämän jälkeen menin kansioon ja loin sinne index.html nimisen tiedoston komennolla
+
+        micro index.html
+        
+Kopioin jälleen html 5 templaten ja pyysin huvikseni chatgpt:tä generoimaan lyhyen tekstin siitä, miksi hupparit ovat mukavia. Tulos oli seuraavanlainen:
+
+![add file: upload](V3Kuvat1/v3t1k2.jpg)
+
+
+# Uusi käyttäjä kotisivuilla
+
+Aloitetaan 15:47
+
+
 
 
 # Lähteet Kaikki luettu 2/1/2023
