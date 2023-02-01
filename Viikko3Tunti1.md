@@ -58,7 +58,7 @@ Tarkistin olevani oikeassa paikassa kirjoittamalla ```ls```. Tämän jälkeen av
 Kopioin sieltä löytyvän koodin "online notepad:ille" jotta sain helposti palautettua kotisivun tehtävän jälkeen (koodin sai helposti kopioitua tekstieditorista painamalla ctrl + a, ctrl + c. Googlasin validoidun html 5 templaten ja täytin siihen yksinkertaista sisältöä jonka jälkeen tallensin. Apachen kotisivu näyttää nyt tältä:
 ![add file: upload](V3Kuvat1/v3t1k1.jpg)
 
-Kun yritin palauttaa koodia avaamalla index.html tiedoston jälleen komennolla ```sudo micro index.html``` terminaali oli täysin mustana, komento ```micro index.html``` kuitenkin avasi tiedoston normaalisti, kopioituani koodin takaisin ja tallennettuani (ctrl+s) micro kysyi tahdonko muuttaa tiedostoa sudo-oikeuksilla johon vastasin kyllä, ja salasanan kirjoitettuani tuttu apachen kotisivu oli jälleen paikalla.
+Kun yritin palauttaa koodia avaamalla index.html tiedoston jälleen komennolla ```sudo micro index.html``` terminaali oli täysin mustana, suljin terminaalin ja avasin sen uudelleen jolloin komento ```micro index.html``` avasi tiedoston normaalisti, kopioituani koodin takaisin ja tallennettuani (ctrl+s) micro kysyi tahdonko muuttaa tiedostoa sudo-oikeuksilla johon vastasin kyllä, ja salasanan kirjoitettuani tuttu apachen kotisivu oli jälleen paikalla.
         
 Mikäli en olisi saanut palautettua sivun ulkonäköä olisin voinut poistaa apachen kaikkine tietoineen ja asentaa sen uudelleen, seuraavilla komennoilla.
 
