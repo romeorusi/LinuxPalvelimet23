@@ -118,8 +118,13 @@ Käytin viimeiseen tehtävään aikasemmin tekemääni yksinkertaista, mutta val
 
 
 
+Kysymyksiä ei sinänsä jäänyt, mutta huomiona se, etten ole varma kuinka tekisin molemmille käyttäjille oman directoryn kohtaan localhost/~käyttäjä(1/2). Epäilen että etc/.../userdir kohdasta pitäisi jotain muuttaa, tuo menee itsellä kuitenkin yli osaamisen eikä ollut ymmärtääkseni vaadittua niin jätin toistaiseksi tekemättä.
+
+Tehtävä valmis 16:33 (käytetty vajaa 2h)
+
+
 # Lähteet Kaikki luettu 2/1/2023
 1) https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h5-maailman-suosituin
 2) https://share.transistor.fm/s/940ae75e
 3) https://www.ibm.com/docs/en/aix/7.2?topic=passwords-becoming-another-user-system-su-command
-4) 
+
