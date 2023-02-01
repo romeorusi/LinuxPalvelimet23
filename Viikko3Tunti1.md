@@ -90,10 +90,35 @@ Kopioin jälleen html 5 templaten ja pyysin huvikseni chatgpt:tä generoimaan ly
 
 Aloitetaan 15:47
 
+Aloitin kirjoittamalla
+
+    sudo adduser toinenromeo
+    
+Järjestelmä pyysi asettamaan salasanan ja varmistamaan tietoja, kirjoitin salasanan kahteen kertaan mutta jätin muut kentät tyhjiksi. Luotuani käyttäjän halusin vaihtaa käyttäjää. Kirjoitin seuraavat komennot
+
+![add file: upload](V3Kuvat1/v3t1k3.jpg)
+
+Ensin kysyin kuka olen ja varmistin etten ollut vaihtanut käyttäjää, sitten kirjoitin "su" komennon (switch user) ja salasanan, lopuksi varmistin olevani oikealla käyttäjällä, vaikka sen huomasikin terminaalista.
+
+Tämän jälkeen kirjauduin kuitenkin toiselle käyttäjälle(rome) ja ajoin uudella käyttäjällä (toinenromeo) seuraavat komennot:
+![add file: upload](V3Kuvat1/v3t1k4.jpg)
+
+Menin ensin oikeaan kohtaan, johon loin directoryn "public_html", siirryin juuri luomaani directoryyn ja loin sinne index.html tiedoston johon kirjoitin yhden rivin leipätekstiä 
+
+![add file: upload](V3Kuvat1/v3t1k5.jpg)
+
+Sivulle pääsee nyt menemällä localhost/~toinenromeo, sekä localhost/~toinenromeo/index.html. Ymmärtääkseni tässä oli kuitenkin tarvitut jutut joten en alkanut miettimään kuinka saisin toinenromeo käyttäjälle index-sivuston kuten pääkäyttäjällä (rome) on.
+
+# Validi html5 sivu
+
+Käytin viimeiseen tehtävään aikasemmin tekemääni yksinkertaista, mutta validoitua html-sivua. Ajoin sen varmuudeksi vielä läpi w3 validaattorista
+
+![add file: upload](V3Kuvat1/v3t1k6.jpg)
 
 
 
 # Lähteet Kaikki luettu 2/1/2023
 1) https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h5-maailman-suosituin
 2) https://share.transistor.fm/s/940ae75e
-3) 
+3) https://www.ibm.com/docs/en/aix/7.2?topic=passwords-becoming-another-user-system-su-command
+4) 
