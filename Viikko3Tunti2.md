@@ -1,9 +1,9 @@
 ### Sisällysluettelo
 
-- [Aloitustilanne](#Aloitustilanne)
-- [Tiivistelmä](#Tiivistelmä)
+- [Aloitustilanne](#Aloitustilanne)- 
 - [Etusivu](#etusivu)
 - [Virhe](#virhe)
+- [Tiivistelmä](#Tiivistelmä)
 - [Lähteet](#lähteet)
 
 
@@ -28,6 +28,9 @@
 - SSD 1 NVMe (~500GB)
 - SSD 2 SATA (~500GB)
 
+
+
+# Tiivistelmä löytyy lopusta
 
 
 # Etusivu 
@@ -168,7 +171,27 @@ Antaa erilaisen, lyhyemmän tulosteen josta selviää ongelman tiedostosijainti.
 Muutetaan lopuksi konffitiedosto takaisin aikaisempaan.
 
 
+# Tiivistelmä
+https://httpd.apache.org/docs/2.4/getting-started.html
 
+- Ohjeet on tarkoitettu ihmisille jotka ovat täysin uusia apachen käyttäjiä
+- Verkon osoitteet esitetään URL-osoitteina ja ne määrittää palvelimen nimi, reitti esim /etc/apache2/error.log ja välillä kysymysmerkin jälkeen tulevilla lisäargumenteilla esim. name=John
+- Käyttäjä yhdistyy protokollan mukaisesti ja pyytää resursseja palvelimelta, resurssi voi olla ohjelma, tiedosto tai "käsittelijä" (vaikka status)
+- Palvelin lähettää vastauksen, joka koostuu tilakoodista ja tarvittaessa vastauksen rungosta. Tilakoodi kertoo, onnistuiko pyyntö ja, jos ei, mikä virhetilanne oli. Tämä kertoo asiakkaalle, mitä sen tulisi tehdä vastauksella.
+
+https://httpd.apache.org/docs/current/vhosts/name-based.html
+
+- Ip pohjaiset virtuaalipalvelimet käyttävät yhteyden IP osoitetta päättääkseen mitä tehdä, nimi-pohjaiset puolestaan osoitteen nimeä. IP pohjaisessa VirtualHost tagissa on ip.
+- Nimi-pohjainen on suositus, sillä sen käyttö on yksinkertaisempaa.
+- Apachessa molemmille tehdään <VirtualHost>-osa IP pohjaisessa ip on aloitustagin sisällä <VirtualHost 127.0.0.1:33380> ja nimipohjaisessa IP:n tilalla on *<VirtualHost *:80>. 
+- ServerAlias:ta voidaan käyttää määrittämään lisänimiä jotka tunnistetaan päänimeksi
+	
+		<VirtualHost *:80>
+		ServerName example.com
+		ServerAlias www.example.com example2.com
+
+		</VirtualHost>
+	    
 
 
 # Lähteet
@@ -177,3 +200,6 @@ Kaikki luettu 5/2/2023
 - https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/
 - https://www.loggly.com/use-cases/how-to-monitor-your-apache-logs/#:~:text=On%20a%20Linux%20server%2C%20you,%2Flog%2Fapache2%2Ferror. 
 - https://docs.oracle.com/cd/E19253-01/806-7612/files-20/index.html#:~:text=To%20remove%20a%20directory%20and,the%20recursive%20option%2C%20-r%20.&text=Directories%20that%20are%20removed%20with,with%20the%20rm%20-r%20command.
+- https://httpd.apache.org/docs/2.4/getting-started.html
+- https://httpd.apache.org/docs/current/vhosts/name-based.html
+- 
