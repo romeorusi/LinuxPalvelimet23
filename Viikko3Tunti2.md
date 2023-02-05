@@ -76,7 +76,7 @@ Kirjauduin pois pääkäyttäjältä varmistaakseni että sivun muokkaaminen onn
 ![add file: upload](V3Kuvat2/v3t2k2.jpg)
 
 
-### Korjataan asia, kirjaudutaan takaisin pääkäyttäjälle, poistetaan directory sekä index.html tiedosto, muokataan frontpage.conf tiedoston reitti toiselle käyttäjälle ja luodaan tarvittavat kansiot sekä tiedostot oikeaan paikkaan.
+Korjataan asia, kirjaudutaan takaisin pääkäyttäjälle, poistetaan directory sekä index.html tiedosto, muokataan frontpage.conf tiedoston reitti toiselle käyttäjälle ja luodaan tarvittavat kansiot sekä tiedostot oikeaan paikkaan.
 
     su rome
     
