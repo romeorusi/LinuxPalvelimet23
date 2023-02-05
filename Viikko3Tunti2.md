@@ -1,6 +1,6 @@
 ### Sisällysluettelo
 
-- [Aloitustilanne](#Aloitustilanne)- 
+- [Aloitustilanne](#Aloitustilanne) 
 - [Etusivu](#etusivu)
 - [Virhe](#virhe)
 - [Tiivistelmä](#Tiivistelmä)
@@ -30,7 +30,7 @@
 
 
 
-# Tiivistelmä löytyy lopusta
+## Tiivistelmä löytyy lopusta
 
 
 # Etusivu 
@@ -71,9 +71,7 @@ Mennään luomaan sivu konffistiedostossa olevaan osoitteeseen
 ![add file: upload](V3Kuvat2/v3t2k1.jpg)
 
 
-Kirjauduin pois pääkäyttäjältä varmistaakseni että sivun muokkaaminen onnistuu ilman sudoa, huomasin että näin ei ole, sillä loin directoryn sekä index.html:än pääkäyttäjälle. 
-
-Kuvasta huomaa, ettei toisella käyttäjällä tiedoston muokkaaminen onnistu.
+Kirjauduin pois pääkäyttäjältä varmistaakseni että sivun muokkaaminen onnistuu ilman sudoa, huomasin että näin ei ole. Ajattelen ongelman johtuvan siitä, että loin tiedostot pääkäyttäjälle. Kuvasta huomaa, ettei toisella käyttäjällä tiedoston muokkaaminen onnistu.
 
 ![add file: upload](V3Kuvat2/v3t2k2.jpg)
 
@@ -162,7 +160,7 @@ Käydään katsomassa miltä error.log näyttää
 
 Seuraava lokikirjaus löytyy
 
-```[Sun Feb 05 16:09:01.126916 2023] [authz_core:error] [pid 2957:tid 140093529573120] [client 127.0.0.1:33380] AH01630: client denied by server configuration: /home/toinenromeo/public``` Lokissa mainitaan kellonaika jolloin kirjaus on tehty (juuri äsken), lokin tyyppi (error), prosessin ja säikeen ID, mistä osoitteesta pyyntö on tehty (IP ja portti) ja lopuksi virhekoodi sekä tieto mitä on tapahtunut. 
+```[Sun Feb 05 16:09:01.126916 2023] [authz_core:error] [pid 2957:tid 140093529573120] [client 127.0.0.1:33380] AH01630: client denied by server configuration: /home/toinenromeo/public``` Lokissa mainitaan kellonaika, sekä päivämäärä jolloin kirjaus on tehty (juuri äsken), lokin tyyppi (error), prosessin ja säikeen ID, mistä osoitteesta pyyntö on tehty (IP ja portti) ja lopuksi virhekoodi sekä tieto mitä on tapahtunut. 
 
     sudo apache2ctl configtest
     
@@ -171,15 +169,17 @@ Antaa erilaisen, lyhyemmän tulosteen josta selviää ongelman tiedostosijainti.
 Muutetaan lopuksi konffitiedosto takaisin aikaisempaan.
 
 
+
+
 # Tiivistelmä
-https://httpd.apache.org/docs/2.4/getting-started.html
+### https://httpd.apache.org/docs/2.4/getting-started.html
 
 - Ohjeet on tarkoitettu ihmisille jotka ovat täysin uusia apachen käyttäjiä
 - Verkon osoitteet esitetään URL-osoitteina ja ne määrittää palvelimen nimi, reitti esim /etc/apache2/error.log ja välillä kysymysmerkin jälkeen tulevilla lisäargumenteilla esim. name=John
 - Käyttäjä yhdistyy protokollan mukaisesti ja pyytää resursseja palvelimelta, resurssi voi olla ohjelma, tiedosto tai "käsittelijä" (vaikka status)
 - Palvelin lähettää vastauksen, joka koostuu tilakoodista ja tarvittaessa vastauksen rungosta. Tilakoodi kertoo, onnistuiko pyyntö ja, jos ei, mikä virhetilanne oli. Tämä kertoo asiakkaalle, mitä sen tulisi tehdä vastauksella.
 
-https://httpd.apache.org/docs/current/vhosts/name-based.html
+### https://httpd.apache.org/docs/current/vhosts/name-based.html
 
 - Ip pohjaiset virtuaalipalvelimet käyttävät yhteyden IP osoitetta päättääkseen mitä tehdä, nimi-pohjaiset puolestaan osoitteen nimeä. IP pohjaisessa VirtualHost tagissa on ip.
 - Nimi-pohjainen on suositus, sillä sen käyttö on yksinkertaisempaa.
@@ -194,6 +194,9 @@ https://httpd.apache.org/docs/current/vhosts/name-based.html
 	    
 
 
+# Valmista 17:38
+	
+	
 # Lähteet
 
 Kaikki luettu 5/2/2023
@@ -202,4 +205,4 @@ Kaikki luettu 5/2/2023
 - https://docs.oracle.com/cd/E19253-01/806-7612/files-20/index.html#:~:text=To%20remove%20a%20directory%20and,the%20recursive%20option%2C%20-r%20.&text=Directories%20that%20are%20removed%20with,with%20the%20rm%20-r%20command.
 - https://httpd.apache.org/docs/2.4/getting-started.html
 - https://httpd.apache.org/docs/current/vhosts/name-based.html
-- 
+
