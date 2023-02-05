@@ -49,8 +49,7 @@ Touch luo tyhjän tekstitiedoston tiettyyn paikkaan ja sudoedit antaa editoida s
 	  </Directory>
     </VirtualHost>
 
-Tuo koodi mahdollistaa sivun muokkaamisen ilman sudoa, palataan siihen myöhemmin. Seuraavaksi laitetaan uusi sivu päälle ja poistetaan vanha oletus käytöstä
-ajetaan seuraavat komennot 
+Tuo koodi mahdollistaa sivun muokkaamisen ilman sudoa, palataan siihen myöhemmin. Seuraavaksi laitetaan uusi sivu päälle ja poistetaan vanha oletus käytöstä.
 
     sudo a2ensite frontpage.conf
     
