@@ -4,7 +4,6 @@
 - [Tiivistelmä](#Tiivistelmä)- 
 - [Etusivu](#etusivu)
 - [Virhe](#virhe)
-- 
 - [Lähteet](#lähteet)
 
 
