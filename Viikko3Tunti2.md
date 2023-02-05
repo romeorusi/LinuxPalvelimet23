@@ -37,13 +37,13 @@
 
 Aloitetaan 14:34
 
-Muutin apachen etusivun. Aloitin menemällä root kansioon toistamalla komentoa ```cd ..``` kunnes pääsin juurihakemistoon. Kirjoitin komennot
+Muutin Apachen etusivun. Aloitin menemällä juureen toistamalla komentoa ```cd ..``` kunnes pääsin juurihakemistoon. Kirjoitin komennot:
 
     sudo touch /etc/apache2/sites-enabled/frontpage.conf
     
     sudoedit /etc/apache2/sites-enabled/frontpage.conf
 
-Touch luo tyhjän tekstitiedoston tiettyyn paikkaan ja sudoedit antaa editoida sitä. Kirjoitetaan seuraava tiedostoon.
+Touch luo tyhjän tekstitiedoston tiettyyn paikkaan ja sudoedit antaa editoida sitä. Kirjoitetaan tiedostoon seuraava:
 
     <VirtualHost *:80>
 	  DocumentRoot /home/rome/public_sites/
@@ -52,42 +52,42 @@ Touch luo tyhjän tekstitiedoston tiettyyn paikkaan ja sudoedit antaa editoida s
 	  </Directory>
     </VirtualHost>
 
-Tuo koodi mahdollistaa sivun muokkaamisen ilman sudoa, palataan siihen myöhemmin. Seuraavaksi laitetaan uusi sivu päälle ja poistetaan vanha oletus käytöstä.
+Tuo koodi mahdollistaa sivun muokkaamisen ilman sudoa, palataan siihen myöhemmin. Laitetaan juuri tekemämme konfiguraatiotiedosto päälle ja poistetaan aikasempi.
 
     sudo a2ensite frontpage.conf
     
     sudo a2dissite 000-default.conf
     
-Jotta saadaan tieto päivitettyä uudelleenkäynnistetään apache ```sudo systemctl restart apache2``` 
+Uudelleenkäynnistetään apache, jotta tiedot päivittyvät. ```sudo systemctl restart apache2``` 
 
-Mennään luomaan sivu konffistiedostossa olevaan osoitteeseen 
+Mennään luomaan sivu konffistiedostossa olevaan osoitteeseen: 
 
     cd /home/rome/ 
     
     mkdir public_sites
     
-```micro index.html``` tänne kirjoitetaan html  
+```micro index.html``` Tähän tiedostoon kirjoitetaan HTML, muutama sana riittää toistaiseksi.  
 
 ![add file: upload](V3Kuvat2/v3t2k1.jpg)
 
 
-Kirjauduin pois pääkäyttäjältä varmistaakseni että sivun muokkaaminen onnistuu ilman sudoa, huomasin että näin ei ole. Ajattelen ongelman johtuvan siitä, että loin tiedostot pääkäyttäjälle. Kuvasta huomaa, ettei toisella käyttäjällä tiedoston muokkaaminen onnistu.
+Kirjauduin pois pääkäyttäjältä varmistaakseni että sivun muokkaaminen onnistuu ilman sudoa, huomasin että näin ei ole. Ajattelin ongelman johtuvan siitä, että loin tiedostot pääkäyttäjälle. Kuvasta huomaa, ettei toisella käyttäjällä tiedoston muokkaaminen onnistu. 
 
 ![add file: upload](V3Kuvat2/v3t2k2.jpg)
 
 
-Korjataan asia, kirjaudutaan takaisin pääkäyttäjälle, poistetaan directory sekä index.html tiedosto, muokataan frontpage.conf tiedoston reitti toiselle käyttäjälle ja luodaan tarvittavat kansiot sekä tiedostot oikeaan paikkaan.
+Korjataan asia, kirjaudutaan takaisin pääkäyttäjälle, poistetaan directory sekä index.html tiedosto, muokataan frontpage.conf tiedoston reitti toiselle käyttäjälle ja luodaan tarvittavat kansiot, sekä tiedostot oikeaan paikkaan:
 
     su rome
     
     sudo rm -r public_sites
     
-```export EDITOR=micro``` Tämä komento muuttaa istunnon ajaksi sudoeditissä käytettävän editorin microksi. 
+```export EDITOR=micro``` Tämä komento asettaa micron oletustekstieditoriksi istunnon ajaksi. 
 
     sudoedit /etc/apache2/sites-available/frontpage.conf
     
     
-Kirjoitetaan seuraava koodi avattuun konffikseen
+Kirjoitetaan seuraava koodi avattuun konffikseen:
 
     <VirtualHost *:80>
   	DocumentRoot /home/toinenromeo/public_sites/
@@ -96,30 +96,30 @@ Kirjoitetaan seuraava koodi avattuun konffikseen
   	</Directory>
     </VirtualHost>
 
-Vaihdetaan käyttäjää uudelleen
+Vaihdetaan käyttäjää uudelleen.
   
     su toinenromeo
     
-Mennään oikeaan paikkaan
+Mennään oikeaan paikkaan.
     
     cd /home/toinenromeo/
     
-Luodaan directory "public_sites"
+Luodaan directory "public_sites".
     
     mkdir public_sites
     
-Mennään oikeaan paikkaan
+Mennään oikeaan paikkaan.
     
     cd public_sites
     
-Luodaan tiedosto "index.html" ja laitetaan sinne sisältöä jonka haluamme sivulla nähdä, kirjoitin vain pari sanaa.
+Luodaan tiedosto "index.html" ja laitetaan sinne sisältöä jonka haluamme sivulla nähdä, muutama sana riittää jälleen.
     
     micro index.html
     
 ![add file: upload](V3Kuvat2/v3t2k3.jpg)
     
 
-Tällä kertaa muokkaaminen onnistui ongelmitta ilman sudo-oikeuksia. Lopuksi äynnistetään apache uudelleen 
+Tällä kertaa muokkaaminen onnistui ongelmitta ilman sudo-oikeuksia. Lopuksi äynnistetään apache uudelleen jotta muutokset tallentuvat.
   
     sudo systemctl restart apache2
         
@@ -127,7 +127,7 @@ Tällä kertaa muokkaaminen onnistui ongelmitta ilman sudo-oikeuksia. Lopuksi ä
 
 Kaikki toimii.
 
-Huomattakoon että en ole täysin varma johtuiko ongelma tallentamisen kanssa siitä että tiedosto oli väärässä paikassa vai siitä, että muokkaaja oli toinen käyttäjä. Saatoin käyttää ylimääräistä aikaa turhaan, mutta ainakin tuli kerrattua. 🙂
+Huomattakoon, että en ole täysin varma johtuiko ongelma tallentamisen kanssa siitä että tiedosto oli väärässä paikassa vai siitä, että muokkaaja oli toinen käyttäjä. Saatoin käyttää ylimääräistä aikaa turhaan, mutta ainakin tuli kerrattua. 🙂
 
 
 
@@ -135,11 +135,11 @@ Huomattakoon että en ole täysin varma johtuiko ongelma tallentamisen kanssa si
 
 Aloitetaan 15:43
 
-Luodaan virhe konfiguraatiotiedostoon menemällä tiedostoon ja poistamalla yksi kirjain
+Luodaan virhe konfiguraatiotiedostoon menemällä tiedostoon ja muuttamalla tiedostopolku sellaiseksi, jota ei ole.
 
     sudoedit etc/apache2/sites-available/frontpage.conf
 
-Tallennetaan seuraava teksti, public_sites -> public
+Tallennetaan seuraava teksti, "public_sites" -> "public":
 
     <VirtualHost *:80>
 	  DocumentRoot /home/toinenromeo/public/
@@ -148,17 +148,17 @@ Tallennetaan seuraava teksti, public_sites -> public
 	  </Directory>
     </VirtualHost>
 
-Käynnistetään apache uudelleen
+Käynnistetään apache uudelleen.
 
     sudo systemctl restart apache2
 
 ![add file: upload](V3Kuvat2/v3t2k5.jpg)
 
-Käydään katsomassa miltä error.log näyttää
+Käydään katsomassa miltä error.log näyttää.
 
     sudo cat var/log/apache2/error.log
 
-Seuraava lokikirjaus löytyy
+Löysin seuraavan lokikirjauksen:
 
 ```[Sun Feb 05 16:09:01.126916 2023] [authz_core:error] [pid 2957:tid 140093529573120] [client 127.0.0.1:33380] AH01630: client denied by server configuration: /home/toinenromeo/public``` Lokissa mainitaan kellonaika, sekä päivämäärä jolloin kirjaus on tehty (juuri äsken), lokin tyyppi (error), prosessin ja säikeen ID, mistä osoitteesta pyyntö on tehty (IP ja portti) ja lopuksi virhekoodi sekä tieto mitä on tapahtunut. 
 
