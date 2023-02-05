@@ -1,7 +1,7 @@
 ### Sisällysluettelo
 
 - [Aloitustilanne](#Aloitustilanne)
-- [Tiivistelmä](#Tiivistelmä)- 
+- [Tiivistelmä](#Tiivistelmä)
 - [Etusivu](#etusivu)
 - [Virhe](#virhe)
 - [Lähteet](#lähteet)
