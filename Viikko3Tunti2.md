@@ -183,7 +183,7 @@ Muutetaan lopuksi konffitiedosto takaisin aikaisempaan.
 
 - Ip pohjaiset virtuaalipalvelimet käyttävät yhteyden IP osoitetta päättääkseen mitä tehdä, nimi-pohjaiset puolestaan osoitteen nimeä. IP pohjaisessa VirtualHost tagissa on ip.
 - Nimi-pohjainen on suositus, sillä sen käyttö on yksinkertaisempaa.
-- Apachessa molemmille tehdään <VirtualHost>-osa IP pohjaisessa ip on aloitustagin sisällä <VirtualHost 127.0.0.1:33380> ja nimipohjaisessa IP:n tilalla on *<VirtualHost *:80>. 
+- Apachessa molemmille tehdään VirtualHost-osa IP pohjaisessa ip on aloitustagin sisällä <VirtualHost 127.0.0.1:33380> ja nimipohjaisessa IP:n tilalla on *<VirtualHost *:80>. 
 - ServerAlias:ta voidaan käyttää määrittämään lisänimiä jotka tunnistetaan päänimeksi
 	
 		<VirtualHost *:80>
