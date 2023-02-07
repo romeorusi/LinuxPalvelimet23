@@ -119,7 +119,7 @@ Luodaan tiedosto "index.html" ja laitetaan sinne sisältöä jonka haluamme sivu
 ![add file: upload](V3Kuvat2/v3t2k3.jpg)
     
 
-Tällä kertaa muokkaaminen onnistui ongelmitta ilman sudo-oikeuksia. Lopuksi äynnistetään apache uudelleen jotta muutokset tallentuvat.
+Tällä kertaa muokkaaminen onnistui ongelmitta ilman sudo-oikeuksia. Lopuksi käynnistetään apache uudelleen jotta muutokset tallentuvat.
   
     sudo systemctl restart apache2
         
