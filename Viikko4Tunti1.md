@@ -33,7 +33,9 @@
 
 17:15
 
-Vuokrasin pilveä sivulta https://www.linode.com, kirjauduin sivulle ja etenin kunnes sain vuokrattua "Nanode 1GB" palvelimen. Koko prosessi onnistui ongelmitta.
+Vuokrasin pilveä sivulta https://www.linode.com, kirjauduin sivulle ja etenin kunnes sain vuokrattua "Nanode 1GB" palvelimen. Koko prosessi onnistui ongelmitta. 
+Koska olin koekaniinina tunnilla en valitettavasti päässyt kuvailemaan prosessia raporttiin, prosessi oli kuitenkin intuitiivinen ja siihen löytää tarvittaessa
+apua sekä googlesta, että kurssitovereiden raporteista.
 
 
 # Alkutoimet
