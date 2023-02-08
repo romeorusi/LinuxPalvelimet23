@@ -31,10 +31,14 @@
 
 # Pilvipalvelu
 
+17:15
+
 Vuokrasin pilveä sivulta https://www.linode.com, kirjauduin sivulle ja etenin kunnes sain vuokrattua "Nanode 1GB" palvelimen. Koko prosessi onnistui ongelmitta.
 
 
 # Alkutoimet
+
+17:18
 
 Avasin ssh yhteyden kirjauduttuani virtuaalikoneelle komennolla
 
@@ -92,6 +96,8 @@ Käynnistin tämän jälkeen ssh palvelun uudelleen
 
 # Weppipalvelin
 
+17:34
+
 Apache oli jo aikaisemmin asennettuna (ylempänä näkyy kun sen sudo apt-getillä hain) joten jäljellä oli ainoastaan sivun luominen niin, että se a) näkyy ja 
 b) ei ole "default page"
 
@@ -108,6 +114,7 @@ Menin tarkistamaan sivulta "http://143.42.59.187/" näkyykö viesti sielä, ja k
 
 # Murtautumiset
 
+17:44
 
 Menin ohjeiden mukaan katsomaan mitä löydän /var/log/auth.log:ista.
 
@@ -121,6 +128,8 @@ Seuraavia tapahtumia löysin, otin kuvan muutamasta yrityksestä, mutta niitä l
 
 # Tiivistelmä
 
+17:50
+
 Tehtävänä oli tiivistää https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Tero Karvisen ensimmäiset askeleet uudelle
 virtuaaliserverin hostille.
 
@@ -132,7 +141,7 @@ sekä isoja ja pieniä kirjaimia. Salalauseiden käyttö on myös suositeltavaa.
 muuttamalla se kielletyksi sieltä.
 - Päivitä paketit ja käytä palvelinta mielesi mukaan!
 
-
+Valmista 18:04.
 
 # Lähteet
 - https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h5-maailman-suosituin
