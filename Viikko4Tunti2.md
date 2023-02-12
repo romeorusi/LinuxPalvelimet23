@@ -80,7 +80,7 @@ Muistan vastaavan ongelman muiden ohjelmien kanssa ja tiedän sen tarkoittavan e
 
 ![add file: upload](V4Kuvat2/v4t2k9.jpg)
 
-Löysin kattavan selityksen googlesta tulosteen analysoimiseksi etsimällä "linux dig prompt explained". Vastaus oli seuraavanlainen: Answer kohta on merkityksellisin ja sieltä löytyy ```romeorusi.com.		300	IN	A	143.42.59.187``` seuraavanlainen kohta. Vasemmalta oikealle mentäessä: romeorusi.com on palvelimen nimi jolle pyyntö tehtiin, 300 on "time to live" numero joka kertoo millisekunteina kuinka kauan pyyntö on validi löysin tästä lisää tietoa cloudflaren sivuilta. IN on pyynnön "luokka" ja A on pyynnön tyyppi. IN tarkoittaa internetiä ja A Addressia, viimeisen IP:n tunnistankin, se on IP jonka namecheapissa sijoitin A recordiin, eli oman palvelimeni ip-osoite.
+Löysin kattavan selityksen googlesta tulosteen analysoimiseksi etsimällä "linux dig prompt explained". Vastaus oli seuraavanlainen: Answer kohta on merkityksellisin ja sieltä löytyy ```romeorusi.com.		300	IN	A	143.42.59.187``` seuraavanlainen kohta. Vasemmalta oikealle mentäessä: romeorusi.com on palvelimen nimi jolle pyyntö tehtiin, 300 on "time to live" numero joka kertoo sekunteina kuinka kauan pyyntö on validi löysin tästä lisää tietoa cloudflaren sivuilta. IN on pyynnön "luokka" ja A on pyynnön tyyppi. IN tarkoittaa internetiä ja A Addressia, viimeisen IP:n tunnistankin, se on IP jonka namecheapissa sijoitin A recordiin, eli oman palvelimeni ip-osoite.
 
 Valmis 14:29
 
