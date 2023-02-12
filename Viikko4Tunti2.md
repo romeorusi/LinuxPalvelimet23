@@ -40,8 +40,7 @@ sekä www.romeorusi.com vievät molemmat sivulle tuolla IP-osoitteella
 
 ![add file: upload](V4Kuvat2/v4t2k2.jpg)
 
-Äsken kuvaillun osan jälkeen tarkistin välittömästi romeorusi.com sivua, joka ei vielä toiminut. Otin lasin vettä ja sen jälkeen sivu toimi suoraan. Kaikki ei kuitenkaan
-ollut vielä valmista. Huomasin, että vain www.romeorusi.com toimii, romeorusi.com ei palauttanut mitään.
+Äsken kuvaillun osan jälkeen tarkistin välittömästi www.romeorusi.com sivua. Tämä toimi, huomasin kuitenkin että vain www.romeorusi.com toimii, romeorusi.com ei palauttanut mitään.
 
 www.romeorusi.com
 
@@ -52,7 +51,7 @@ romeorusi.com
 ![add file: upload](V4Kuvat2/v4t2k4.jpg)
 
 Kokeilin myös chromella, mutta valitettavasti tulos on sama. Curlasin sivun linuxilla ja sain palautteeksi (ilman www prefixia) sivun oikean koodin. Sivu ei kuitenkaan
-toiminut millään selaimella. Googlasin mistä asia voisi riippua ja sain vastaukseksi, että muutokset voivat viedä hetken aikaa.
+toiminut millään selaimella(**jälkikäteen en vieläkään ymmärrä mitä tässä tapahtui, en ymmärrä miten on mahdollista että sivu ei toimi millään selaimella, mutta curl palauttaa sen lähdekoodin oikein, ainoa syy mitä keksin on, että curl lisää www. prefixin sivuihin automaattisesti.** Googlasin mistä asia voisi riippua ja sain vastaukseksi, että muutokset voivat viedä hetken aikaa.
 
 ![add file: upload](V4Kuvat2/v4t2k5.jpg)
 
