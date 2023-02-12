@@ -3,7 +3,6 @@
 - [Domainnimi](#Domainnimi)
 - [Lähteet](#lähteet)
 
-![add file: upload](V4Kuvat2/v4t2k1.jpg)
 
 
 # Aloitustilanne
@@ -65,10 +64,29 @@ Oletettavaa siis on, että jokin osa prosessista saattaa kestää pidempää. Lo
 ok.
 
 
-Seuraavaksi tutkin host ja dig komentoja. En ollut varma mitä host tekee, joten aloitin kirjoittamalla 
+Seuraavaksi tutkin host ja dig komentoja. En ollut varma mitä host tekee, joten aloitin kirjoittamalla ```tldr host``` tämä hyödyntää asentamaani ohjelmaa "tldr" joka
+käytännössä tekee saman kuin man, mutta selkemmässä formaatissa. Tällä sain tietää että host kertoo DNS:stä tietoja. Seuraavaksi kirjoitin komennon ```host romeorusi.com```
 
+Seuraavan promptin sain tulosteeksi: 
 
+![add file: upload](V4Kuvat2/v4t2k7.jpg)
 
+"romeorusi.com has address 143.42.59 187" on oletettava tuloste, joka yksinkertaisuudessaan listaa IP-osoitteen johon nimellä yhdistettään. Seuraavat rivit ovat kryptisempiä. "romeorusi.com mail is handled by 20 eforward5.registrar-servers.com." En löytänyt millään fiksulla hakusanalla mitään mikä selittäisi tuota tulostetta. Oletettavaa tekstin perusteella on vain, että tieto kulkee jossain määrin jollain tavalla sivulta romeorusi.com sivun eforward5.registrar-servers.com sivun kautta.
+
+Seuraavaksi dig. Jälleen, ajoin ```tldr dig``` jolla sain vähän tietoa siitä mitä komento tekee ja millaisessa formaatissa sitä voi käyttää, sitten koitin ajaa komennon ```dig romeorusi.com``` tämä ei kuitenkaan onnnistunut, sillä komentoa ei löytynyt. 
+
+![add file: upload](V4Kuvat2/v4t2k8.jpg)
+
+Muistan vastaavan ongelman muiden ohjelmien kanssa ja tiedän sen tarkoittavan ettei komentoa/sovellusta ole vielä asennettu. Googlasin suoraan "linux debian 11 how to install dig" ja sain kätevästi vastaukseksi ```apt-get install -y dnsutils``` ajoin sen suoraan. Tällä kertaa onnistui ja sain seuraavan näkymän palautteeksi:
+
+![add file: upload](V4Kuvat2/v4t2k9.jpg)
+
+Löysin kattavan selityksen googlesta tulosteen analysoimiseksi etsimällä "linux dig prompt explained". Vastaus oli seuraavanlainen: Answer kohta on merkityksellisin ja sieltä löytyy ```romeorusi.com.		300	IN	A	143.42.59.187``` seuraavanlainen kohta. Vasemmalta oikealle mentäessä: romeorusi.com on palvelimen nimi jolle pyyntö tehtiin, 300 on "time to live" numero joka kertoo millisekunteina kuinka kauan pyyntö on validi löysin tästä lisää tietoa cloudflaren sivuilta. IN on pyynnön "luokka" ja A on pyynnön tyyppi. IN tarkoittaa internetiä ja A Addressia, viimeisen IP:n tunnistankin, se on IP jonka namecheapissa sijoitin A recordiin, eli oman palvelimeni ip-osoite.
+
+Valmis 14:29
 
 # Lähteet
 - https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/#h8-say-my-name
+- https://linuxhint.com/install-dig-debian-11/
+- https://phoenixnap.com/kb/linux-dig-command-examples
+- https://developers.cloudflare.com/dns/manage-dns-records/reference/ttl/#:~:text=Time%20to%20Live%20(TTL)%20is,to%20reach%20your%20end%20users.
