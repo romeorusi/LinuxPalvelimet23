@@ -45,7 +45,7 @@ Ajoin ohjeista löytyvät komennot annetussa järjestyksessä, mikään komento 
 # CRUD
 Aloitetaan 15:11
 
-Vaikka linkki löytyykin lähteistä tähän kohtaan oli todella hyvät ja kattavat ohjeet linkissä https://terokarvinen.com/2016/03/05/postgresql-install-and-one-table-database-sql-crud-tutorial-for-ubuntu/ En ole henkilökohtaisesti kirjotitanut SQL:ää yli vuoteen joten nämä tulivat tarpeeseen.
+Vaikka linkki löytyykin lähteistä tähän kohtaan oli todella hyvät ja kattavat ohjeet linkissä https://terokarvinen.com/2016/03/05/postgresql-install-and-one-table-database-sql-crud-tutorial-for-ubuntu/ En ole henkilökohtaisesti kirjoittanut SQL:ää yli vuoteen joten nämä tulivat tarpeeseen.
 
 ![add file: upload](V5Kuvat1/v5t1k2.jpg)
 
