@@ -35,14 +35,16 @@ Esimerkki palvelusta jossa tietokantoja voidaan hyvin hyödyntää on esimerkiks
 
 
 # Postgre
-15:07
+Aloitetaan 15:07
+
 ![add file: upload](V5Kuvat1/v5t1k1.jpg)
 
 Ajoin ohjeista löytyvät komennot annetussa järjestyksessä, mikään komento ei tuottanut ongelmia, mutta tekstiä tuli sen verran että kuvan päätin hakea historystä.
 
 
 # CRUD
-15:11
+Aloitetaan 15:11
+
 Vaikka linkki löytyykin lähteistä tähän kohtaan oli todella hyvät ja kattavat ohjeet linkissä https://terokarvinen.com/2016/03/05/postgresql-install-and-one-table-database-sql-crud-tutorial-for-ubuntu/ En ole henkilökohtaisesti kirjotitanut SQL:ää yli vuoteen joten nämä tulivat tarpeeseen.
 
 ![add file: upload](V5Kuvat1/v5t1k2.jpg)
