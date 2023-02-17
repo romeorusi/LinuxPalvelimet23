@@ -31,7 +31,7 @@
 
 # Yrityssoftaa
 Aloitetaan 15:00
-Esimerkki palvelusta jossa tietokantoja voidaan hyvin hyödyntää on esimerkiksi verkkokaupat. Toisella kurssilla suunnittelimme tietokantarakeenteen kuvitteelliselle verkkokaupalle jossa myytiin pelejä, konsoleita ja oheistuotteita. Tietokannan käyttö auttaa skaalautuvuudessa huomattavasti ja saattaa tarjota käyttäjälle nopeamman kokemuksen mikäli koodi ajetaan palvelimella eikä käyttäjän selaimessa.
+Esimerkki palvelusta, jossa tietokantoja voidaan hyvin hyödyntää on esimerkiksi verkkokaupat. Toisella kurssilla suunnittelimme tietokantarakeenteen kuvitteelliselle verkkokaupalle jossa myytiin pelejä, konsoleita ja oheistuotteita. Tietokannan käyttö auttaa skaalautuvuudessa huomattavasti ja saattaa tarjota käyttäjälle nopeamman kokemuksen mikäli koodi ajetaan palvelimella eikä käyttäjän selaimessa.
 
 
 # Postgre
