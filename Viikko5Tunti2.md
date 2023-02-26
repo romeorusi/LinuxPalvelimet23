@@ -97,7 +97,7 @@ Tämän jälkeen tehtävänä oli lisätä käyttäjä ja luoda sille luotettava
 
     ./manage.py createsuperuser
 
-Testatakseni käyttäjää käynnistin serverin uudelleen samalla komennolla kuink aikaisemmin. Muutin URLia lisäämällä sen perään /admin jotta pääsin kirjautumaan. 
+Testatakseni käyttäjää käynnistin serverin uudelleen samalla komennolla kuin aikaisemmin. Muutin URLia lisäämällä sen perään /admin jotta pääsin kirjautumaan. 
 Kirjautuminen juuri luomillani tunnuksilla onnistui ongelmitta. 
 
 ![add file: upload](V5Kuvat2/v5t2k9.jpg)
