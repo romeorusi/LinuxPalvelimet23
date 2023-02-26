@@ -46,7 +46,7 @@ Komento onnistui ja kuten kuvasta huomataan promptissa lukee (env), kuten ohjeis
 
 ![add file: upload](V5Kuvat2/v5t2k1.jpg)
 
-Ennen seuraavaa komentoa ohjeissa muistutetaan olemaan ajamatta pip:piä sudona tai ilman virtualenviä.
+Ennen seuraavaa komentoa ohjeissa muistutetaan olemaan ajamatta pip:piä sudona tai ilman virtualenviä. Ajetaan seuraava komento jotta nähdään ovatko asiat asentuneet oikeisiin paikkoihin
 
     which pip
     
