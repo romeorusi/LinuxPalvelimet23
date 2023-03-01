@@ -91,5 +91,41 @@ Koitin tunnilla annetun ohjeen mukaan etsiä tiedoston sijaintia komennolla find
 
 ![add file: upload](V6Kuvat1/v6t1k8.jpg)
 
+Mietiskelin asiaa noin tunnin verran kaikka googlaillen melkein turhautumiseen asti kunnes tajusin, että jostain syystä koska projektin luonti ei onnistunut ei myöskään wsgi.py tiedostoa oltu koskaan luotu. Se, miksi projektin luominen ei onnistunut on minulle kuitenkin puhdas mysteeri, mitään vastaavan nimistä ei tietokoneella ole. Tein seuraavat asiat ja koitin saada asian ratkaistua niillä:
+
+1. ```django-admin startproject testi2```
+2. ```export EDITOR=micro```
+3. ```sudoedit /etc/apache2/sites-available/testi2.conf```
+4. ```sudo rm -r testi2``` (tämä oli se directory jolla koitin tehtävää aluksi tehdä, olin kuitenkin jo aikaisemmin poistanut sen.
+5. ```cd publicwsgi/```
+6. ```sudo apt-get -y install libapache2-mod-wsgi-py3``` (varmuudeksi, tämä kuitenkin oli jo asennettu.)
+7. ```/sbin/apache2ctl configtest``` Jälleen sama lopputulos, AH00558
+8. ```curl -s localhost|grep title``` palautuksena <title>403 Forbidden</title>
+9. ```django-admin startproject toivo```
+10. ```cd toivo```
+11. ```./manage.py runserver``` palautuksena: ![add file: upload](V6Kuvat1/v6t1k9.jpg) (sammutin kuitenkin heti ctrl+c, tarkistin vaan mitä tapahtuu)
+12. ```sudoedit /etc/apache2/sites-available/toivo.conf``` : ![add file: upload](V6Kuvat1/v6t1k10.jpg) 
+13. ```cd toivo```
+14. ```sudo apt-get -y install libapache2-mod-wsgi-py3``` (jälleen varmuudeksi, jälleen kaikki jo asennettuna. Halusin vain varmistua ettei asennus ole jostain syystä mennyt pieleen/väärän paikkaan)
+15. ```/sbin/apache2ctl configtest``` (sama lopputulos, AH00558)
+16. ```sudo systemctl restart apache2```
+17. ```curl -s localhost|grep title``` (palautuksena <title>403 Forbidden</title>)
+18. ```sudoedit /etc/apache2/sites-available/teroco.conf``` (tässä kohtaa ilmiselvä virhe joka vei hiukan aikaa ja itseasiassa rikkoi apachen hetkeksi, kopioin siis komennon ohjeista enkä tajunnut muuttaa tuota teroco:a toivo:ksi, laitoin siällön ohjeiden mukaan mutta toivo.conf oli edelleen tyhjä eikä apache toiminut, korjasin tämän kuitenkin myöhemmin ja editoin oikeaa kohtaa ```sudoedit /etc/apache2/sites-available/toivo.conf ```)
+19. ```mkdir -p publicwsgi/toivo/static```
+20. ```echo "jotain"|tee publicwsgi/toivo/static/index.html```
+21. ```sudo a2ensite toivo.conf```
+22. ```sudo a2dissite testi2.conf```
+23. ```sudo a2dissite rtesti.conf```
+24. ```sudo systemctl restart apache2``` (tässä kohtaa apache ei suostunut enää toimimaan, kuitenkin hetken mietittyäni ymmärsin kirjoitusvirheen jonka tein aikaisemmin ja sain asian nopeasti korjattua)
+25. ```echo "Apachen perus sivu"|sudo tee /var/www/html/index.html```
+
+Lopuksi sain 403 error viestin, kun kävin katsomassa error.log:eista seuraava rivi oli kertomassa virheestä
+![add file: upload](V6Kuvat1/v6t1k11.jpg) 
+
+Kävin katsomassa kaikki .py tiedostot läpi /home/rome/toivo/toivo/wsgi.py directoryssä mutta mistään en löytänyt keinoa säätää oikeuksia. Tajusin, että olin luonut projektin oletettavasti väärän paikkaan joten wsgi.py ei löytynyt ohjeissa kerrotusta paikasta, tiesin kuitenkin mistä se löytyi ja muutin oikean sijainnin TWSGI variableen 
+![add file: upload](V6Kuvat1/v6t1k12.jpg) 
+
+Tämäkään ei ratkaissut asiaa. Jouduin valitettavasti myöntämään tappion tässä kohtaa ja siirtymään muihin asioihin.
+
 # Lähteet
 - https://terokarvinen.com/2022/deploy-django/
