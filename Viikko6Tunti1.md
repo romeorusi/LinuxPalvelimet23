@@ -31,7 +31,7 @@
 
 # Tuotantoasennus
 
-Tehtävän tarkoituksena on tehdä Djangoon tuotantoasennus. Poistin aikasemmin tekemäni testitiedoston jotta pystyin ohjeiden mukaan tekemään kaiken oikein alusta loppuun. Ensimmäisenä päivitin kaikki paketit ```sudo apt-get update``` ja asensin microon bashin ```sudo apt-get -y install micro bash-completion``` ja laitoin micron pääasialliseksi tekstieditoriksi komennolla ```export EDITOR=micro```. Apache oli valmiina asennettuna, joten sen asennusta en tässä raportissa käy läpi. Tiedettäköön siitä kuitenkin sen verran, että olen aikaisemmin muokannut ```var/www/html/index.html``` kohtaan itselleni sivun, joten tarvittaessa tunnistan onnistuuko vai ei.
+Tehtävän tarkoituksena on tehdä Djangoon tuotantoasennus. Poistin aikasemmin tekemäni testi-directoryn jotta pystyin ohjeiden mukaan tekemään kaiken oikein alusta loppuun. Ensimmäisenä päivitin kaikki paketit ```sudo apt-get update``` ja asensin microon bashin ```sudo apt-get -y install micro bash-completion``` ja laitoin micron pääasialliseksi tekstieditoriksi komennolla ```export EDITOR=micro```. Apache oli valmiina asennettuna, joten sen asennusta en tässä raportissa käy läpi. Tiedettäköön siitä kuitenkin sen verran, että olen aikaisemmin muokannut ```var/www/html/index.html``` kohtaan itselleni sivun, joten tarvittaessa tunnistan onnistuuko vai ei.
 
 Komennolla ```echo "Jotain asiaa"|tee publicwsgi/rtesti/static/index.html``` loin yksinkertaista sisältöä juuri luotuun index.html tiedostoon. Tarkistin onnistuiko komento kirjoittamalla "cat alt + ." joka kopioi aikaisemman tiedostokohteen suoraan komentoriville. Kuten kuvasta huomaa tieto on tallentunut.
 
@@ -91,7 +91,7 @@ Koitin tunnilla annetun ohjeen mukaan etsiä tiedoston sijaintia komennolla find
 
 ![add file: upload](V6Kuvat1/v6t1k8.jpg)
 
-Mietiskelin asiaa noin tunnin verran kaikka googlaillen melkein turhautumiseen asti kunnes tajusin, että jostain syystä koska projektin luonti ei onnistunut ei myöskään wsgi.py tiedostoa oltu koskaan luotu. Se, miksi projektin luominen ei onnistunut on minulle kuitenkin puhdas mysteeri, mitään vastaavan nimistä ei tietokoneella ole. Tein seuraavat asiat ja koitin saada asian ratkaistua niillä:
+Mietiskelin asiaa noin tunnin verran googlaillen kunnes tajusin, että jostain syystä koska projektin luonti ei onnistunut ei myöskään wsgi.py tiedostoa oltu koskaan luotu. Se, miksi projektin luominen ei onnistunut on minulle kuitenkin puhdas mysteeri, mitään vastaavan nimistä ei tietokoneella ole. Tein seuraavat asiat ja koitin saada asian ratkaistua niillä:
 
 1. ```django-admin startproject testi2```
 2. ```export EDITOR=micro```
@@ -119,7 +119,7 @@ Mietiskelin asiaa noin tunnin verran kaikka googlaillen melkein turhautumiseen a
 24. ```sudo systemctl restart apache2``` (tässä kohtaa apache ei suostunut enää toimimaan, kuitenkin hetken mietittyäni ymmärsin kirjoitusvirheen jonka tein aikaisemmin ja sain asian nopeasti korjattua)
 25. ```echo "Apachen perus sivu"|sudo tee /var/www/html/index.html```
 
-Lopuksi sain 403 error viestin, kun kävin katsomassa error.log:eista seuraava rivi oli kertomassa virheestä
+Lopuksi sain 403 error-viestin, kun kävin katsomassa error logeista seuraava rivi oli kertomassa virheestä
 ![add file: upload](V6Kuvat1/v6t1k11.jpg) 
 
 Kävin katsomassa kaikki .py tiedostot läpi /home/rome/toivo/toivo/wsgi.py directoryssä mutta mistään en löytänyt keinoa säätää oikeuksia. Tajusin, että olin luonut projektin oletettavasti väärän paikkaan joten wsgi.py ei löytynyt ohjeissa kerrotusta paikasta, tiesin kuitenkin mistä se löytyi ja muutin oikean sijainnin TWSGI variableen 
