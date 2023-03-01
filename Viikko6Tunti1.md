@@ -110,7 +110,7 @@ Mietiskelin asiaa noin tunnin verran kaikka googlaillen melkein turhautumiseen a
 15. ```/sbin/apache2ctl configtest``` (sama lopputulos, AH00558)
 16. ```sudo systemctl restart apache2```
 17. ```curl -s localhost|grep title``` (palautuksena <title>403 Forbidden</title>)
-18. ```sudoedit /etc/apache2/sites-available/teroco.conf``` (tässä kohtaa ilmiselvä virhe joka vei hiukan aikaa ja itseasiassa rikkoi apachen hetkeksi, kopioin siis komennon ohjeista enkä tajunnut muuttaa tuota teroco:a toivo:ksi, laitoin siällön ohjeiden mukaan mutta toivo.conf oli edelleen tyhjä eikä apache toiminut, korjasin tämän kuitenkin myöhemmin ja editoin oikeaa kohtaa ```sudoedit /etc/apache2/sites-available/toivo.conf ```)
+18. ```sudoedit /etc/apache2/sites-available/teroco.conf``` (tässä kohtaa ilmiselvä virhe joka vei hiukan aikaa ja itseasiassa rikkoi apachen hetkeksi, kopioin siis komennon ohjeista enkä tajunnut muuttaa tuota teroco:a toivo:ksi, laitoin siällön ohjeiden mukaan mutta toivo.conf oli edelleen tyhjä eikä apache toiminut, korjasin tämän kuitenkin myöhemmin ja editoin oikeaa kohtaa ```sudoedit /etc/apache2/sites-available/toivo.conf ``` virhe jonka sain: ![add file: upload](V6Kuvat1/v6t1k13.jpg)  )
 19. ```mkdir -p publicwsgi/toivo/static```
 20. ```echo "jotain"|tee publicwsgi/toivo/static/index.html```
 21. ```sudo a2ensite toivo.conf```
