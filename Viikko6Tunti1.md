@@ -127,5 +127,7 @@ Kävin katsomassa kaikki .py tiedostot läpi /home/rome/toivo/toivo/wsgi.py dire
 
 Tämäkään ei ratkaissut asiaa. Jouduin valitettavasti myöntämään tappion tässä kohtaa ja siirtymään muihin asioihin.
 
+Lopetus 16:05 
+
 # Lähteet
 - https://terokarvinen.com/2022/deploy-django/
