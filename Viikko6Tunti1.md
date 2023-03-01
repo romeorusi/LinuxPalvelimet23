@@ -27,7 +27,7 @@
 - SSD 2 SATA (~500GB)
 
 
-![add file: upload](V6Kuvat1/v6t1k1.jpg)
+
 
 # Tuotantoasennus
 
