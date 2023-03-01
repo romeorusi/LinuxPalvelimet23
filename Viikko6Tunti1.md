@@ -85,9 +85,11 @@ Projektia en alkanut luomaan koska sellainen löytyi jo ja pääsin tehtävän v
 
 ![add file: upload](V6Kuvat1/v6t1k7.jpg)
 
-Seuraavaksi asensin apacheen WSGI moduulin komennolla ```sudo apt-get -y install libapache2-mod-wsgi-py3``` ja tarkistin syntaxin uudelleen komennolla. Sain jälleen vain "AH00558"-virheilmoituksen joten kaikki on oletettavasti hyvin. Käynnistin apachen uudelleen komennolla ```sudo systemctl restart apache2``` ja tarkistin toimiiko kaikki komennolla ```curl -s localhost|grep title``` sain vastaukseksi ```<title>403 Forbidden</title>``` joten jokin ei toimi, aloin tarkistelemaan missä vika voisi olla ja aloin epäilemään ettei wsgi.py tiedostoa olisi. Kävin tarkistamassa apachen error logit varmuudeksi, ja sieltä löytyvä tieto lisäsi epäilystäni wsgi.py tiedoston puutteesta, löysin sieltä seuraavanlaisen promptin: ```[Wed Mar 01 13:48:43.141917 2023] [authz_core:error] [pid 4604:tid 140004804884224] [client ::1:54552] AH01630: client denied by server configuration: /home/rome/publicwsgi/rtesti/rtesti```.
+Seuraavaksi asensin apacheen WSGI moduulin komennolla ```sudo apt-get -y install libapache2-mod-wsgi-py3``` ja tarkistin syntaxin uudelleen komennolla. Sain jälleen vain "AH00558"-virheilmoituksen joten kaikki on oletettavasti hyvin. Käynnistin apachen uudelleen komennolla ```sudo systemctl restart apache2``` ja tarkistin toimiiko kaikki komennolla ```curl -s localhost|grep title``` sain vastaukseksi ```<title>403 Forbidden</title>``` joten jokin ei toimi, aloin tarkistelemaan missä vika voisi olla ja aloin epäilemään ettei wsgi.py tiedostoa olisi. Kävin tarkistamassa apachen error logit varmuudeksi, ja sieltä löytyvä tieto lisäsi epäilystäni wsgi.py tiedoston puutteesta, löysin sieltä seuraavanlaisen promptin: ```[Wed Mar 01 13:48:43.141917 2023] [authz_core:error] [pid 4604:tid 140004804884224] [client ::1:54552] AH01630: client denied by server configuration: /home/rome/publicwsgi/rtesti/rtesti```. 
 
+Koitin tunnilla annetun ohjeen mukaan etsiä tiedoston sijaintia komennolla find | grep mutta en valitettavasti täältäkään sitä löytänyt. Googlailin miten ongelman saisi selvitettyä mutta en valitettavasti löytänyt mistä se voisi johtua. Edellisellä tunnilla olin luonut projektin nimeltä "testi" jonka poistin, en osaa sanoa liittyykö tämä siihe, ymmärtääkseni wsgi.py tiedoston tulisi generoitua itsestään. 
 
+![add file: upload](V6Kuvat1/v6t1k8.jpg)
 
 # Lähteet
 - https://terokarvinen.com/2022/deploy-django/
