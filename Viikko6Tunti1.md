@@ -81,7 +81,7 @@ Tämän jälkeen ajoin komennon ```source env/bin/activate``` joka aktivoi virtu
 
 ![add file: upload](V6Kuvat1/v6t1k6.jpg)
 
-Projektia en alkanut luomaan koska sellainen löytyi jo ja pääsin tehtävän vaikeimpaan osaan. Aloitin menemällä komennolla ```sudoedit /etc/apache2/sites-available/rtesti.conf``` oikeaan paikkaan ja kopioimalla ohjeistuksen mukaan sisällön tiedostolle. Muutin kopioituun sisältöön oikeat muuttujat ja sijainnit vastaamaan omaa projektiani ja asettamiani nimiä. 
+Olin tehtävän alussa poistanut aiemman projektin ja koittaessa luoda uuta sain ilmoituksen että sellainen on jo, joten päätin edetä. Aloitin menemällä komennolla ```sudoedit /etc/apache2/sites-available/rtesti.conf``` oikeaan paikkaan ja kopioimalla ohjeistuksen mukaan sisällön tiedostolle. Muutin kopioituun sisältöön oikeat muuttujat ja sijainnit vastaamaan omaa projektiani ja asettamiani nimiä. 
 
 ![add file: upload](V6Kuvat1/v6t1k7.jpg)
 
