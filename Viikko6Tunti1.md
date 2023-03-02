@@ -125,7 +125,7 @@ Lopuksi sain 403 error-viestin, kun kävin katsomassa error logeista seuraava ri
 Kävin katsomassa kaikki .py tiedostot läpi /home/rome/toivo/toivo/wsgi.py directoryssä mutta mistään en löytänyt keinoa säätää oikeuksia. Tajusin, että olin luonut projektin oletettavasti väärän paikkaan joten wsgi.py ei löytynyt ohjeissa kerrotusta paikasta, tiesin kuitenkin mistä se löytyi ja muutin oikean sijainnin TWSGI variableen 
 ![add file: upload](V6Kuvat1/v6t1k12.jpg) 
 
-Tämäkään ei ratkaissut asiaa. Jouduin valitettavasti myöntämään tappion tässä kohtaa ja siirtymään muihin asioihin.
+Tämäkään ei ratkaissut asiaa. Jouduin valitettavasti myöntämään tappion tässä kohtaa ja siirtymään muihin asioihin. Viimeinen virhekoodi jonka saan on "AH01630: client denied by server configuration: /home/rome/toivo/toivo/wsgi.py" mutta wsgi.py tiedostossa ei ole mitään minkä ymmärtäisin ongelmaan vaikuttavan ja TWSGI on määritetty ymmärtääkseni oikein.
 
 Lopetus 16:05 
 
