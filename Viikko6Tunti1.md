@@ -148,7 +148,15 @@ Ajoin ```sudo systemctl restart apache2``` ja sain seuraavan palautteen komennol
 
         <title>500 Internal Server Error</title>
      
+Tuon tekemisen jälkeen jos ajan
 
+        cd
+        cd toivo
+        ./manage.py runserver
+        
+saan seuraavanlaisen ongelman aikaiseksi:
+
+![add file: upload](V6Kuvat1/v6t1k15.jpg) 
 
 # Lähteet
 - https://terokarvinen.com/2022/deploy-django/
