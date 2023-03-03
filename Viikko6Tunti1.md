@@ -140,9 +140,14 @@ Menin lisäämään
         import os
         STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-rivit settings.py tiedostoon ja tämän jälkeen ajoin ```./manage.py collectstatic``` komennon joka näytti hyvältä mutta palautti syntax errorin "invalid syntax"
+rivit settings.py tiedostoon ja tämän jälkeen ajoin ```./manage.py collectstatic``` komennon joka näytti siltä että jotain tapahtuu, mutta palautti syntax errorin "invalid syntax". 
 
 ![add file: upload](V6Kuvat1/v6t1k14.jpg) 
+
+Ajoin ```sudo systemctl restart apache2``` ja sain seuraavan palautteen komennolla ```curl localhost``` ja sain palautteeksi:
+
+        <title>500 Internal Server Error</title>
+     
 
 
 # Lähteet
