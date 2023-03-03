@@ -131,6 +131,9 @@ Lopetus 16:05
 
 To 2/3/2023 palasin vielä tarkistamaan asiaa, jos menen ```cd toivo``` ```./manage.py runserver``` saan sivun näkymään komennolla ```curl http://127.0.0.1:8000/``` (ja tietysti myös menemällä selaimessa samaan osoitteseen. 
 
+
+3/3/2023
+
 Muutin vielä debugin falseksi ja kirjoitin allowed hosts kohtaan "localhost", tämä ei muuttanut mitään vaan sivu palauttaa edelleen 403. 
 
 Ennen tunnin alkua katselin ongelmaa jälleen ja tajusin että toivo.conf sisälsi väärän tiedostosijainnin TDIR kohdassa. Otin sijainnnista publicwsgi:n pois ja näin sain "404 not found" virheilmoituksen näkymään.
