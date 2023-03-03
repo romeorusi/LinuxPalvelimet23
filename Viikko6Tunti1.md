@@ -133,5 +133,17 @@ To 2/3/2023 palasin vielä tarkistamaan asiaa, jos menen ```cd toivo``` ```./man
 
 Muutin vielä debugin falseksi ja kirjoitin allowed hosts kohtaan "localhost", tämä ei muuttanut mitään vaan sivu palauttaa edelleen 403. 
 
+Ennen tunnin alkua katselin ongelmaa jälleen ja tajusin että toivo.conf sisälsi väärän tiedostosijainnin TDIR kohdassa. Otin sijainnnista publicwsgi:n pois ja näin sain "404 not found" virheilmoituksen näkymään.
+
+Menin lisäämään 
+
+        import os
+        STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+rivit settings.py tiedostoon ja tämän jälkeen ajoin ```./manage.py collectstatic``` komennon joka näytti hyvältä mutta palautti syntax errorin "invalid syntax"
+
+![add file: upload](V6Kuvat1/v6t1k14.jpg) 
+
+
 # Lähteet
 - https://terokarvinen.com/2022/deploy-django/
