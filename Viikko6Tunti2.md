@@ -2,11 +2,11 @@
 
 ### Sisällysluettelo
 - [Aloitustilanne](#Aloitustilanne) 
-- [Python kirjoitusvirhe](#Python kirjoitusvirhe)
-- [Django väärässä paikassa](#Django väärässä paikassa)
-- [Väärät oikeudet](#Väärät oikeudet)
-- [Apache kirjoitusvirhe](#Apache kirjoitusvirhe)
-- [Väärä allowed hosts](#Väärä allowed hosts)
+- [Python kirjoitusvirhe](#Python-kirjoitusvirhe)
+- [Django väärässä paikassa](#Django-väärässä-paikassa)
+- [Väärät oikeudet](#Väärät-oikeudet)
+- [Apache kirjoitusvirhe](#Apache-kirjoitusvirhe)
+- [Väärä allowed hosts](#Väärä-allowed-hosts)
 - [Lähteet](#lähteet)
 
 
