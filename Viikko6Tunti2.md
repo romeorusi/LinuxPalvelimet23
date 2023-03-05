@@ -2,7 +2,11 @@
 
 ### Sisällysluettelo
 - [Aloitustilanne](#Aloitustilanne) 
-- [Tuotantoasennus](#Tuotantoasennus)
+- [Python kirjoitusvirhe](#Python kirjoitusvirhe)
+- [Django väärässä paikassa](#Django väärässä paikassa)
+- [Väärät oikeudet](#Väärät oikeudet)
+- [Apache kirjoitusvirhe](#Apache kirjoitusvirhe)
+- [Väärä allowed hosts](#Väärä allowed hosts)
 - [Lähteet](#lähteet)
 
 
@@ -27,5 +31,17 @@
 - SSD 2 SATA (~500GB)
 
 
+# Python kirjoitusvirhe
+
+# Django väärässä paikassa
+
+# Väärät oikeudet
+
+# Apache kirjoitusvirhe
+
+# Väärä allowed hosts
+
+
 
 # Lähteet
+- https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/
