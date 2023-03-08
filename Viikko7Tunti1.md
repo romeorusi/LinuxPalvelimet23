@@ -25,7 +25,7 @@ WSGI puuttuu
 - Ram 16GB
 - SSD 1 NVMe (~500GB)
 - SSD 2 SATA (~500GB)
-![add file: upload](V7Kuvat1/v7t1k1.jpg) 
+
 
 # Hello world
 
@@ -60,7 +60,7 @@ Ajoin tiedoston
 
     python3 HelloWorld.py
 
-![add file: upload](V7Kuvat2/v7t1k2.jpg)
+![add file: upload](V7Kuvat1/v7t1k2.jpg)
 
 
 ### Java
