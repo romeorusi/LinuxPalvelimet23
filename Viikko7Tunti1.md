@@ -25,7 +25,7 @@ WSGI puuttuu
 - Ram 16GB
 - SSD 1 NVMe (~500GB)
 - SSD 2 SATA (~500GB)
-![add file: upload](V7Kuvat2/v7t1k1.jpg) 
+![add file: upload](V7Kuvat1/v7t1k1.jpg) 
 
 # Hello world
 
@@ -47,7 +47,7 @@ Ensin loin bash ohjelman
     
 Kirjoitin sisään ```echo "Hello World"```
 
-![add file: upload](V7Kuvat2/v7t1k1.jpg) 
+![add file: upload](V7Kuvat1/v7t1k1.jpg) 
 
 
 ### Python
@@ -82,7 +82,7 @@ Kirjoitin tiedostoon seuraavan ohjeiden mukaan:
 Tämän jälkeen tiedosto piti compilaa, tein sen komennolla ```javac HelloWorld.java``` jonka jälkeen yritin ajaa ohjelmaa ```java HelloWorld.java``` sain tässä kuitenkin
 errorin, sillä javac luo tiedoston ilman .java päätettä, joka on ajettava. Ajoin tämän jälkeen ```java HelloWorld``` 
 
-![add file: upload](V7Kuvat2/v7t1k3.jpg)
+![add file: upload](V7Kuvat1/v7t1k3.jpg)
 
 Valmista 16:26
 
