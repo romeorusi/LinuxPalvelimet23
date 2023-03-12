@@ -70,7 +70,7 @@ sudo chmod ugo+x komento2
 
 
 # Komento3
-En keksinyt mitä tehtä joten päätin monimutkaistaa LS komentoa.
+En keksinyt mitä tehdä joten päätin monimutkaistaa LS komentoa. 
 
     cd /usr/local/bin/
 
@@ -85,7 +85,7 @@ kirjoitin tiedostoon seuraavan todella yksinkertaisen koodin:
       echo $file
     done
 
-koodi tulostaa jokaisen nykyhakemistosta löytyvän tiedoston.
+koodi tulostaa jokaisen nykyhakemistosta löytyvän tiedoston. Koodia saisi helposti muokattua "echo" sanaa muuttamalla esimerkiksi poistamaan tiedostoja. 
 
 Muutin oikeudet kuten aikaisemminkin ja kokeilin komentoa
 
@@ -94,7 +94,7 @@ Muutin oikeudet kuten aikaisemminkin ja kokeilin komentoa
 ![add file: upload](V7Kuvat2/v7t2k3.jpg) 
 
 
-Viimeisessä tehtävässä oli hiukan vaikeuksia koska en tosiaan tiennyt mitään bashin syntaxista sivu https://www.cyberciti.biz/faq/bash-for-loop/ kuitenkin auttoi  
+Viimeisessä tehtävässä oli hiukan vaikeuksia koska en tosiaan tiennyt mitään bashin syntaxista tunnilla käytyjen esimerkkien lisäksi sivu https://www.cyberciti.biz/faq/bash-for-loop/ kuitenkin auttoi.
 
 Valmista 20:38
 
