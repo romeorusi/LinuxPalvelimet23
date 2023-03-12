@@ -28,7 +28,7 @@ WSGI puuttuu
 - SSD 1 NVMe (~500GB)
 - SSD 2 SATA (~500GB)
 
-![add file: upload](V7Kuvat2/v7t2k1.jpg) 
+
 
 
 Aloitetaan 20:04 12/3/2023
