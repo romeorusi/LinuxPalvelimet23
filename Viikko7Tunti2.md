@@ -11,7 +11,7 @@ WSGI puuttuu
 
 # Aloitustilanne
 
-- Aloitetaan 16:20 8/3/2023
+
 
 ### Virtualisointi
 - Virtualisoitu VirtualBox 7.0.4
