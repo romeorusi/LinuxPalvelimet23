@@ -85,7 +85,7 @@ kirjoitin tiedostoon seuraavan todella yksinkertaisen koodin:
       echo $file
     done
 
-koodi tulostaa jokaisen nykyhakemistosta löytyvän tiedoston. Koodia saisi helposti muokattua "echo" sanaa muuttamalla esimerkiksi poistamaan tiedostoja. 
+koodi tulostaa jokaisen nykyhakemistosta löytyvän tiedoston nimen. Koodia saisi helposti muokattua "echo" sanaa muuttamalla esimerkiksi poistamaan tiedostoja. 
 
 Muutin oikeudet kuten aikaisemminkin ja kokeilin komentoa
 
